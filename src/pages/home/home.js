@@ -21,7 +21,7 @@ class Home extends Component {
 	Init() {
 		if (this.state.isFetching) {
 			this.setState({ data: Data }, () => {
-				console.log("Data is fetched.");
+				// console.log("Data is fetched.");
 				this.setState({ isFetching: false });
 			});
 		}
