@@ -104,7 +104,13 @@ class Projects extends Component {
 					</div>
 					<div class="column"></div>
 				</div>
-				<NavButton buttonAlign="is-centered" />
+				<div class="columns">
+					<div class="column"></div>
+					<div class="column">
+						<NavButton buttonAlign="is-centered" buttonStyle="is-dark is-rounded is-fullwidth" />
+					</div>
+					<div class="column"></div>
+				</div>
 				<div></div>
 			</div>
 		);

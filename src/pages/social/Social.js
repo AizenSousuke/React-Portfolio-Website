@@ -30,12 +30,12 @@ class Social extends Component {
 			return "Not loaded yet";
 		} else {
 			return (
-				<section class="hero is-dark is-medium">
+				<section class="hero is-dark">
 					<div class="hero-body">
 						<div class="container is-desktop">
 							<h1 class="title is-size-3 text-center">
 								Follow me on: &nbsp;
-								<motion.a
+								{/* <motion.a
 									whileHover={{ scale: 1.5 }}
 									whileTap={{ scale: 0.95 }}
 									href={this.state.data.social[0].link ?? ""}
@@ -52,7 +52,7 @@ class Social extends Component {
 								>
 									<i class="fab fa-facebook-f"></i>
 								</motion.a>{" "}
-								&nbsp;
+								&nbsp; */}
 								<motion.a
 									whileHover={{ scale: 1.5 }}
 									whileTap={{ scale: 0.95 }}
