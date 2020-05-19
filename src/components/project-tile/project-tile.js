@@ -3,9 +3,9 @@ import Button from "../buttons/button.js";
 
 const ProjectTile = (props) => {
 	return (
-		<article class={`tile is-parent ${props.tileSize ?? ""}`}>
+		<article className={`tile is-parent ${props.tileSize ?? ""}`}>
 			<article className="tile is-child box">
-				<figure class={`image ${props.imageStyle ?? "is-16by9"}`}>
+				<figure className={`image ${props.imageStyle ?? "is-16by9"}`}>
 					<img
 						src={`${
 							props.imageLink ??

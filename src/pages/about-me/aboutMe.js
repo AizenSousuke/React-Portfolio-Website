@@ -124,7 +124,7 @@ class AboutMe extends Component {
 												inView ? "visible" : "hidden"
 											}`}
 										>
-											<article class="message">
+											<article className="message">
 												<h2 className="message-header">
 													{" "}
 													Summary{" "}

@@ -5,13 +5,13 @@ import { motion } from "framer-motion";
 const NavButton = (props) => {
 	return (
 		<motion.div
-			class={`buttons ${props.buttonAlign ?? ""}`}
+			className={`buttons ${props.buttonAlign ?? ""}`}
 			whileHover={ props.animate ?? { scale: 1.05 } }
 			whileTap={ props.animate ?? { scale: 0.95 } }
 		>
 			<Link
 				to={`${props.buttonLink ?? "/"}`}
-				class={`button ${props.buttonStyle ?? "is-primary is-rounded"}`}
+				className={`button ${props.buttonStyle ?? "is-primary is-rounded"}`}
 				style={{ textDecoration: "none" }}
 			>
 				{props.buttonName ?? "Return to home page"}
