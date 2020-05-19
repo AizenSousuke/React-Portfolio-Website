@@ -3,6 +3,9 @@ import "../../index";
 import Data from "../../components/data/data.json";
 import { motion } from "framer-motion";
 import ProgressBar from "../../components/progressbar/progress";
+import Cards from "../../components/cards/cards";
+import ProfileCard from "../../components/cards/profile-card";
+import { InView } from "react-intersection-observer";
 
 const list = {
 	hidden: {
@@ -26,15 +29,40 @@ const imageAnim = {
 	normal: {
 		scale: 1,
 		zIndex: 1,
+		rotate: -5,
 	},
 	hover: {
-		scale: 1.5,
-		rotate: 360,
+		scale: 1.3,
 		zIndex: 2,
+		rotate: 5,
 		transition: {
 			duration: 0.25,
 			type: "tween",
 			ease: "circOut",
+		},
+	},
+	tap: {
+		scale: 1.4,
+		zIndex: 2,
+		rotate: 5,
+		transition: {
+			duration: 0.25,
+			type: "tween",
+			ease: "circOut",
+		},
+	},
+	hidden: {
+		x: -100,
+		opacity: 0,
+		transition: {
+			delay: 0.5,
+		},
+	},
+	visible: {
+		x: 0,
+		opacity: 1,
+		transition: {
+			delay: 0.5,
 		},
 	},
 };
@@ -68,118 +96,82 @@ class AboutMe extends Component {
 		} else {
 			return (
 				<motion.div
-					class="container box margin-top"
+					className="container box margin-top"
 					initial="hidden"
 					animate="visible"
 					variants={list}
 				>
-					<div class="columns margin-top">
-						<div class="column is-one-third">
-							<div class="card">
-								<figure class="image is-fullwidth">
-									<img
-										class=""
-										src={
-											this.state.data.about
-												.profile_picture
-										}
-										alt="profile-pic"
-									/>
-								</figure>
-								<div class="card-content">
-									<h2 class="has-text-weight-bold title">
-										{this.state.data.name}
-									</h2>
-									<h3 class="subtitle">
-										{this.state.data.about.job_title}
-									</h3>
-									<div class="buttons">
-										<a
-											class="button is-outlined is-rounded is-fullwidth"
-											href={`${
-												"tel:" + this.state.data.contact
+					<div className="columns margin-top">
+						<div className="column is-one-third">
+							<InView triggerOnce={true}>
+								{({ inView, ref }) => (
+									<div ref={ref}>
+										<motion.div
+											initial="hidden"
+											variants={list}
+											animate={`${
+												inView ? "visible" : "hidden"
 											}`}
 										>
-											<span class="icon is-small">
-												<i
-													class="fa fa-phone"
-													aria-hidden="true"
-												></i>
-											</span>
-											<span>Call Me</span>
-										</a>
-										<a
-											class="button is-black is-rounded is-fullwidth"
-											href={`${
-												"mailto:" +
-												this.state.data.email
-											}`}
-										>
-											<span class="icon is-small">
-												<i
-													class="fa fa-envelope-open"
-													aria-hidden="true"
-												></i>
-											</span>
-											<span>Email Me</span>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="column is-two-thirds">
-							<h2 class="title has-text-dark"> Expertise </h2>
-							<div class="columns is-multiline">
-								{this.state.data.about.expertise.map((item) => (
-									// Every 3 items, make a row
-									<motion.div
-										variants={imageAnim}
-										initial="normal"
-										whileHover="hover"
-										class="column is-half-tablet is-one-third-desktop"
-									>
-										<div class="card">
-											<img
-												class="card-image"
-												src={item.imageLink ?? ""}
-												alt={item.title}
+											<ProfileCard
+												data={this.state.data}
 											/>
-											<div class="card-content">
-												<h2 class="has-text-black">
-													{item.title}
-												</h2>
-												<p class="">
-													{item.description}
-												</p>
+										</motion.div>
+									</div>
+								)}
+							</InView>
+						</div>
+						<div className="column is-two-thirds">
+							<h2 className="title has-text-dark"> Expertise </h2>
+							<div className="columns is-multiline">
+								{this.state.data.about.expertise.map((item) => (
+									<InView key={item.id} triggerOnce={false}>
+										{({ inView, ref }) => (
+											<div
+												className="column is-half-tablet is-one-third-desktop"
+												ref={ref}
+											>
+												{/* Every 3 items, make a row */}
+												<motion.div
+													variants={imageAnim}
+													initial="normal"
+													animate={`${
+														inView
+															? "visible"
+															: "hidden"
+													}`}
+												>
+													<Cards card={item} />
+												</motion.div>
 											</div>
-										</div>
-									</motion.div>
+										)}
+									</InView>
 								))}
 							</div>
 						</div>
 					</div>
-					<div class="columns is-one-third">
-						<div class="column has-text-justified">
-							<h2 class="title has-text-dark"> Summary </h2>
+					<div className="columns is-one-third">
+						<div className="column has-text-justified">
+							<h2 className="title has-text-dark"> Summary </h2>
 							{/* Could make this a component */}
-							{this.state.data.about.summary}
+							<h2 className="subtitle has-text-dark">
+								{this.state.data.about.summary}
+							</h2>
 						</div>
-						<div class="column is-two-thirds">
-							<h2 class="title has-text-dark"> Skills </h2>
+						<div className="column is-two-thirds">
+							<h2 className="title has-text-dark"> Skills </h2>
 							{/* Could make this a component */}
 							{this.state.data.about.skills.map((item) => (
-								<>
-									<div class="column">
-										<p class="has-text-black subtitle">
-											<i class="fas fa-fill-drip"></i>{" "}
-											{item.title}
-										</p>
-										<ProgressBar
-											width={100}
-											percent={item.proficiency}
-										/>
-									</div>
-								</>
+								<div key={item.id} className="column">
+									<p className="has-text-black subtitle">
+										<i className={`${item.icon}`}></i>{" "}
+										{item.title}
+									</p>
+									<ProgressBar
+										width={100}
+										percent={item.proficiency}
+									/>
+								</div>
 							))}
 						</div>
 					</div>

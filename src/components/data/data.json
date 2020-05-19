@@ -42,7 +42,7 @@
 	"about": {
 		"profile_picture": "http://loremflickr.com/512/512/king",
 		"job_title": "Web App Developer",
-		"summary": "I think about code all the time. I love to create applications that solves problems.",
+		"summary": "I think about code and systems all the time. When I'm not at my day job, I love to create web applications that solves problems.",
 		"signature": "http://loremflickr.com/1024/576/signature",
 		"expertise": [
 			{
@@ -91,26 +91,31 @@
 		"skills": [
 			{
 				"id": 1,
+				"icon": "fas fa-cogs",
 				"title": "C#",
 				"proficiency": 65
 			},
 			{
 				"id": 2,
+				"icon": "fas fa-scroll",
 				"title": "Typescript",
 				"proficiency": 70
 			},
 			{
 				"id": 3,
+				"icon": "fas fa-scroll",
 				"title": "Javascript",
 				"proficiency": 65
 			},
 			{
 				"id": 4,
+				"icon": "fab fa-docker",
 				"title": "Docker",
 				"proficiency": 80
 			},
 			{
 				"id": 5,
+				"icon": "fab fa-windows",
 				"title": "Windows",
 				"proficiency": 95
 			}

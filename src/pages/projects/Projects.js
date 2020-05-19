@@ -52,19 +52,19 @@ class Projects extends Component {
 		}
 
 		return (
-			<div class="container is-widescreen">
-				<section class="hero">
-					<div class="hero-body">
-						<div class="container">
-							<h1 class="title is-1 text-center">Projects</h1>
+			<div className="container is-widescreen">
+				<section className="hero">
+					<div className="hero-body">
+						<div className="container">
+							<h1 className="title is-1 text-center">Projects</h1>
 						</div>
 					</div>
 				</section>
-				<div class="columns">
-					<div class="column"></div>
-					<div class="column is-two-thirds-desktop is-three-quarters-tablet">
+				<div className="columns">
+					<div className="column"></div>
+					<div className="column is-two-thirds-desktop is-three-quarters-tablet">
 						<motion.div
-							class="tile is-ancestor is-vertical"
+							className="tile is-ancestor is-vertical"
 							// initial="hidden"
 							// animate="visible"
 							// variants={list}
@@ -80,7 +80,7 @@ class Projects extends Component {
 													ref={ref}
 												>
 													<motion.div 
-														class="tile is-parent"
+														className="tile is-parent"
 														variants={list}
 														initial="hidden"
 														animate={`${inView ? "visible" : "hidden"}`}
@@ -102,9 +102,15 @@ class Projects extends Component {
 							})}
 						</motion.div>
 					</div>
-					<div class="column"></div>
+					<div className="column"></div>
 				</div>
-				<NavButton buttonAlign="is-centered" />
+				<div className="columns">
+					<div className="column"></div>
+					<div className="column">
+						<NavButton buttonAlign="is-centered" buttonStyle="is-dark is-rounded is-fullwidth" />
+					</div>
+					<div className="column"></div>
+				</div>
 				<div></div>
 			</div>
 		);
