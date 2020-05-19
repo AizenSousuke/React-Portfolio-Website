@@ -52,17 +52,17 @@ const imageAnim = {
 		},
 	},
 	hidden: {
-		x: -200,
+		x: -100,
 		opacity: 0,
 		transition: {
-			delay: 0.5
+			delay: 0.5,
 		},
 	},
 	visible: {
 		x: 0,
 		opacity: 1,
 		transition: {
-			delay: 0.5
+			delay: 0.5,
 		},
 	},
 };
@@ -96,82 +96,82 @@ class AboutMe extends Component {
 		} else {
 			return (
 				<motion.div
-					class="container box margin-top"
+					className="container box margin-top"
 					initial="hidden"
 					animate="visible"
 					variants={list}
 				>
-					<div class="columns margin-top">
-						<div class="column is-one-third">
-							<InView
-								triggerOnce={true}
-							>
-								{({inView, ref}) => (
-									<div
-										ref={ref}
-									>
+					<div className="columns margin-top">
+						<div className="column is-one-third">
+							<InView triggerOnce={true}>
+								{({ inView, ref }) => (
+									<div ref={ref}>
 										<motion.div
 											initial="hidden"
 											variants={list}
-											animate={`${inView ? "visible" : "hidden"}`}
+											animate={`${
+												inView ? "visible" : "hidden"
+											}`}
 										>
-											<ProfileCard data={this.state.data} />
+											<ProfileCard
+												data={this.state.data}
+											/>
 										</motion.div>
 									</div>
 								)}
 							</InView>
 						</div>
-						<div class="column is-two-thirds">
-							<h2 class="title has-text-dark"> Expertise </h2>
-							<div class="columns is-multiline">
+						<div className="column is-two-thirds">
+							<h2 className="title has-text-dark"> Expertise </h2>
+							<div className="columns is-multiline">
 								{this.state.data.about.expertise.map((item) => (
-									<InView
-									triggerOnce={false}
-								>
-									{({inView, ref}) => (
-										<div
-											class="column is-half-tablet is-one-third-desktop"
-											ref={ref}
-										>
-											{/* Every 3 items, make a row */}
-											<motion.div
-												variants={imageAnim}
-												initial="normal"
-												animate={`${inView ? "visible" : "hidden"}`}
+									<InView key={item.id} triggerOnce={false}>
+										{({ inView, ref }) => (
+											<div
+												className="column is-half-tablet is-one-third-desktop"
+												ref={ref}
 											>
-												<Cards card={item} />
-											</motion.div>
-										</div>
-									)}
-								</InView>
+												{/* Every 3 items, make a row */}
+												<motion.div
+													variants={imageAnim}
+													initial="normal"
+													animate={`${
+														inView
+															? "visible"
+															: "hidden"
+													}`}
+												>
+													<Cards card={item} />
+												</motion.div>
+											</div>
+										)}
+									</InView>
 								))}
 							</div>
 						</div>
 					</div>
-					<div class="columns is-one-third">
-						<div class="column has-text-justified">
-							<h2 class="title has-text-dark"> Summary </h2>
+					<div className="columns is-one-third">
+						<div className="column has-text-justified">
+							<h2 className="title has-text-dark"> Summary </h2>
 							{/* Could make this a component */}
-							<h2 class="subtitle has-text-dark">
+							<h2 className="subtitle has-text-dark">
 								{this.state.data.about.summary}
 							</h2>
 						</div>
-						<div class="column is-two-thirds">
-							<h2 class="title has-text-dark"> Skills </h2>
+						<div className="column is-two-thirds">
+							<h2 className="title has-text-dark"> Skills </h2>
 							{/* Could make this a component */}
 							{this.state.data.about.skills.map((item) => (
-								<>
-									<div class="column">
-										<p class="has-text-black subtitle">
-											<i class={`${ item.icon }`}></i>{" "}
-											{item.title}
-										</p>
-										<ProgressBar
-											width={100}
-											percent={item.proficiency}
-										/>
-									</div>
-								</>
+								<div key={item.id} className="column">
+									<p className="has-text-black subtitle">
+										<i className={`${item.icon}`}></i>{" "}
+										{item.title}
+									</p>
+									<ProgressBar
+										width={100}
+										percent={item.proficiency}
+									/>
+								</div>
 							))}
 						</div>
 					</div>

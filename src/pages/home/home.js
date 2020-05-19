@@ -33,10 +33,10 @@ class Home extends Component {
 		}
 
 		return (
-			<div class="container is-widescreen">
-				<div class="hero is-info is-large">
-					<div class="hero-body">
-						<div class="container is-fluid">
+			<div className="container is-widescreen">
+				<div className="hero is-info is-large">
+					<div className="hero-body">
+						<div className="container is-fluid">
 							<motion.div
 								initial={{ opacity: 0, x: 200 }}
 								animate={{ opacity: 1, x: 0 }}
@@ -47,7 +47,7 @@ class Home extends Component {
 									duration: 0.5,
 								}}
 							>
-								<h1 class="title is-size-1 has-text-weight-bold has-text-right">
+								<h1 className="title is-size-1 has-text-weight-bold has-text-right">
 									{this.state.data.title}
 								</h1>
 							</motion.div>
@@ -61,7 +61,7 @@ class Home extends Component {
 									duration: 0.5,
 								}}
 							>
-								<h2 class="subtitle is-size-4 has-text-justified">
+								<h2 className="subtitle is-size-4 has-text-justified">
 									{this.state.data.subtitle}
 								</h2>
 							</motion.div>

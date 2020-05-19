@@ -10,8 +10,8 @@ const button = (props) => {
 			whileTap={{ scale: 0.99 }}
 			href={props.buttonLink ?? "/"}
 		>
-			<span class="icon is-small">
-				<i class="fa fa-arrow-right" aria-hidden="true"></i>
+			<span className="icon is-small">
+				<i className="fa fa-arrow-right" aria-hidden="true"></i>
 			</span>
 			<span>{props.buttonName ?? "Button"}</span>
 		</motion.a>

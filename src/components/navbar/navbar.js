@@ -6,26 +6,26 @@ export default function Navbar() {
 	return (
 		<>
 			<nav
-				class="navbar is-dark is-fixed-top"
+				className="navbar is-dark is-fixed-top"
 				role="navigation"
 				aria-label="main navigation"
 			>
-				<div class="navbar-brand">
-					<span class="navbar-item">
-						<i class="fas fa-home"></i> &nbsp;
-						<Link to="/" class="has-text-white">
+				<div className="navbar-brand">
+					<span className="navbar-item">
+						<i className="fas fa-home"></i> &nbsp;
+						<Link to="/" className="has-text-white">
 							Home
 						</Link>
 					</span>
-					<span class="navbar-item">
-						<i class="fas fa-tasks"></i> &nbsp;
-						<Link to="/projects" class="has-text-white">
+					<span className="navbar-item">
+						<i className="fas fa-tasks"></i> &nbsp;
+						<Link to="/projects" className="has-text-white">
 							Projects
 						</Link>
 					</span>
-					<span class="navbar-item">
-						<i class="fas fa-user-circle"></i> &nbsp;
-						<Link to="/about" class="has-text-white">
+					<span className="navbar-item">
+						<i className="fas fa-user-circle"></i> &nbsp;
+						<Link to="/about" className="has-text-white">
 							About
 						</Link>
 					</span>
