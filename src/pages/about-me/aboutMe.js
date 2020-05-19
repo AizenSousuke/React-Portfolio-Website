@@ -29,12 +29,12 @@ const imageAnim = {
 	normal: {
 		scale: 1,
 		zIndex: 1,
-		rotate: -5,
+		rotate: -3,
 	},
 	hover: {
-		scale: 1.3,
+		scale: 1.1,
 		zIndex: 2,
-		rotate: 5,
+		rotate: 3,
 		transition: {
 			duration: 0.25,
 			type: "tween",
@@ -42,9 +42,9 @@ const imageAnim = {
 		},
 	},
 	tap: {
-		scale: 1.4,
+		scale: 1.1,
 		zIndex: 2,
-		rotate: 5,
+		rotate: 3,
 		transition: {
 			duration: 0.25,
 			type: "tween",
@@ -117,6 +117,26 @@ class AboutMe extends Component {
 												data={this.state.data}
 											/>
 										</motion.div>
+										<motion.div
+											initial="hidden"
+											variants={list}
+											animate={`${
+												inView ? "visible" : "hidden"
+											}`}
+										>
+											<article class="message">
+												<h2 className="message-header">
+													{" "}
+													Summary{" "}
+												</h2>
+												<h2 className="message-body">
+													{
+														this.state.data.about
+															.summary
+													}
+												</h2>
+											</article>
+										</motion.div>
 									</div>
 								)}
 							</InView>
@@ -140,6 +160,7 @@ class AboutMe extends Component {
 															? "visible"
 															: "hidden"
 													}`}
+													whileHover="hover"
 												>
 													<Cards card={item} />
 												</motion.div>
@@ -152,15 +173,14 @@ class AboutMe extends Component {
 					</div>
 					<div className="columns is-one-third">
 						<div className="column has-text-justified">
-							<h2 className="title has-text-dark"> Summary </h2>
-							{/* Could make this a component */}
-							<h2 className="subtitle has-text-dark">
-								{this.state.data.about.summary}
-							</h2>
+							<h2 className="title"> Education </h2>
+							<Cards
+								className="message-body"
+								card={this.state.data.about.education}
+							/>
 						</div>
 						<div className="column is-two-thirds">
 							<h2 className="title has-text-dark"> Skills </h2>
-							{/* Could make this a component */}
 							{this.state.data.about.skills.map((item) => (
 								<div key={item.id} className="column">
 									<p className="has-text-black subtitle">
