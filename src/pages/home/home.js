@@ -47,9 +47,9 @@ class Home extends Component {
 									duration: 0.5,
 								}}
 							>
-								<h1 className="title is-size-1 has-text-white has-text-weight-bold has-text-right">
+								<div className="title is-size-1 has-text-white has-text-weight-bold has-text-right">
 									{this.state.data.title}
-								</h1>
+								</div>
 							</motion.div>
 							<motion.div
 								initial={{ opacity: 0, x: -200 }}
@@ -61,9 +61,9 @@ class Home extends Component {
 									duration: 0.5,
 								}}
 							>
-								<h2 className="subtitle is-size-4 has-text-white has-text-justified">
+								<div className="subtitle is-size-4 has-text-white has-text-justified">
 									{this.state.data.subtitle}
-								</h2>
+								</div>
 							</motion.div>
 							<br></br>
 							<motion.div
