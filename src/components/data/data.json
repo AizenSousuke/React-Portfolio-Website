@@ -44,6 +44,13 @@
 		"job_title": "Web App Developer",
 		"summary": "I think about code and systems all the time. When I'm not at my day job, I love to create web applications that solves problems.",
 		"signature": "http://loremflickr.com/1024/576/signature",
+		"education": {
+			"title": "Republic Polytechnic",
+			"description": "Diploma in Game Design",
+			"imageLink": "http://loremflickr.com/1024/576/school",
+			"location": "Singapore",
+			"professionalcert": "Industry Connect Job Ready Software Development Course"
+		},
 		"expertise": [
 			{
 				"id": 1,

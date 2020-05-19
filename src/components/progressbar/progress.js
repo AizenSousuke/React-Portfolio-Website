@@ -9,14 +9,14 @@ const anim = {
 		opacity: 0,
 		transition: {
 			delay: 0.25,
-		}
+		},
 	},
 	visible: {
 		y: 0,
 		opacity: 1,
 		transition: {
 			delay: 0.25,
-		}
+		},
 	},
 };
 
@@ -32,14 +32,10 @@ export var ProgressBar = ({ width, percent }) => {
 			{/* <div className="progress-div" style={{ width: `${width}%` }}>
 				<div style={{ width: `${value}%` }} className="progress" />
 			</div> */}
-			<InView
-				triggerOnce={false}
-			>
-				{({inView, ref}) => (
-					<div
-						ref={ref}
-					>
-						<motion.div 
+			<InView triggerOnce={false}>
+				{({ inView, ref }) => (
+					<div ref={ref}>
+						<motion.div
 							variants={anim}
 							initial="hidden"
 							animate={`${inView ? "visible" : "hidden"}`}
@@ -49,9 +45,7 @@ export var ProgressBar = ({ width, percent }) => {
 								value={width}
 								max={width}
 								style={{ width: `${value}%` }}
-							>
-								15%
-							</progress>
+							></progress>
 						</motion.div>
 					</div>
 				)}
