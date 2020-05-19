@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Data from "../../components/data/data.json";
 import { motion } from "framer-motion";
-import "./Social.scss";
 
 class Social extends Component {
 	constructor(props) {
