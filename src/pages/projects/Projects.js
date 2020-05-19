@@ -78,6 +78,7 @@ class Projects extends Component {
 								return (
 									<>
 										<InView
+											key={obj.id}
 											triggerOnce={false}
 											threshold={0.25}
 										>
