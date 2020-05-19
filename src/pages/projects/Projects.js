@@ -7,17 +7,22 @@ import { motion } from "framer-motion";
 
 const list = {
 	hidden: {
-		x: -200,
+		y: 300,
 		opacity: 0,
 		transition: {
 			delay: 0.25,
+			type: "tween",
+			ease: "easeInOut"
 		}
 	},
 	visible: {
-		x: 0,
+		y: 0,
 		opacity: 1,
 		transition: {
 			delay: 0.25,
+			type: "tween",
+			ease: "easeInOut",
+			duration: 0.5
 		}
 	},
 };
@@ -73,7 +78,8 @@ class Projects extends Component {
 								return (
 									<>
 										<InView
-											triggerOnce={true}
+											triggerOnce={false}
+											threshold={0.25}
 										>
 											{({inView, ref}) => (
 												<div

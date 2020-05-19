@@ -55,14 +55,14 @@ const imageAnim = {
 		x: -100,
 		opacity: 0,
 		transition: {
-			delay: 0.5,
+			delay: 0.25,
 		},
 	},
 	visible: {
 		x: 0,
 		opacity: 1,
 		transition: {
-			delay: 0.5,
+			delay: 0.25,
 		},
 	},
 };
@@ -145,7 +145,11 @@ class AboutMe extends Component {
 							<h2 className="title has-text-dark"> Expertise </h2>
 							<div className="columns is-multiline">
 								{this.state.data.about.expertise.map((item) => (
-									<InView key={item.id} triggerOnce={false}>
+									<InView
+										key={item.id}
+										triggerOnce={false}
+										threshold={0.25}
+									>
 										{({ inView, ref }) => (
 											<div
 												className="column is-half-tablet is-one-third-desktop"
