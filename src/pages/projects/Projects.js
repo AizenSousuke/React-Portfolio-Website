@@ -61,7 +61,7 @@ class Projects extends Component {
 				<section className="hero">
 					<div className="hero-body">
 						<div className="container">
-							<h1 className="title is-1 text-center">Projects</h1>
+							<h1 className="title is-1 has-text-centered">Projects</h1>
 						</div>
 					</div>
 				</section>
@@ -78,6 +78,7 @@ class Projects extends Component {
 								return (
 									<>
 										<InView
+											key={obj.id}
 											triggerOnce={false}
 											threshold={0.25}
 										>

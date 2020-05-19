@@ -30,41 +30,50 @@ class Social extends Component {
 			return "Not loaded yet";
 		} else {
 			return (
-				<section className="hero is-dark">
-					<div className="hero-body">
-						<div className="container is-desktop">
-							<h1 className="title is-size-3 text-center">
-								Follow me on: &nbsp;
-								{/* <motion.a
-									whileHover={{ scale: 1.5 }}
-									whileTap={{ scale: 0.95 }}
-									href={this.state.data.social[0].link ?? ""}
-									className="has-text-light is-inline-block"
-								>
-									<i className="fab fa-instagram" />
-								</motion.a>{" "}
-								&nbsp;
-								<motion.a
-									whileHover={{ scale: 1.5 }}
-									whileTap={{ scale: 0.95 }}
-									href={this.state.data.social[1].link ?? ""}
-									className="has-text-light is-inline-block"
-								>
-									<i className="fab fa-facebook-f"></i>
-								</motion.a>{" "}
-								&nbsp; */}
-								<motion.a
-									whileHover={{ scale: 1.5 }}
-									whileTap={{ scale: 0.95 }}
-									href={this.state.data.social[2].link ?? ""}
-									className="has-text-light is-inline-block"
-								>
-									<i className="fab fa-github"></i>
-								</motion.a>
-							</h1>
+				<footer className="footer">
+					<div className="container">
+						<div className="content has-text-centered">
+							<section className="hero is-dark">
+								<div className="hero-body">
+									<div className="container">
+										<h1 className="title is-size-3 text-center">
+											Follow me on: &nbsp;
+											{/* <motion.a
+												whileHover={{ scale: 1.5 }}
+												whileTap={{ scale: 0.95 }}
+												href={this.state.data.social[0].link ?? ""}
+												className="has-text-light is-inline-block"
+											>
+												<i className="fab fa-instagram" />
+											</motion.a>{" "}
+											&nbsp;
+											<motion.a
+												whileHover={{ scale: 1.5 }}
+												whileTap={{ scale: 0.95 }}
+												href={this.state.data.social[1].link ?? ""}
+												className="has-text-light is-inline-block"
+											>
+												<i className="fab fa-facebook-f"></i>
+											</motion.a>{" "}
+											&nbsp; */}
+											<motion.a
+												whileHover={{ scale: 1.5 }}
+												whileTap={{ scale: 0.95 }}
+												href={
+													this.state.data.social[2]
+														.link ?? ""
+												}
+												className="has-text-light is-inline-block"
+											>
+												<i className="fab fa-github"></i>
+											</motion.a>
+										</h1>
+									</div>
+								</div>
+							</section>
 						</div>
 					</div>
-				</section>
+				</footer>
 			);
 		}
 	}
