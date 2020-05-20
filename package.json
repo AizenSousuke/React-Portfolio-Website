@@ -23,7 +23,7 @@
 		"eject": "react-scripts eject",
 		"css-build": "node-sass --omit-source-map-url ./src/sass/style.scss ./public/css/style.css",
 		"css-watch": "npm run css-build -- --watch",
-		"scss": "npm run css-watch"
+		"css": "npm run css-watch"
 	},
 	"eslintConfig": {
 		"extends": "react-app"

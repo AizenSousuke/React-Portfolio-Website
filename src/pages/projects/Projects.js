@@ -57,51 +57,59 @@ class Projects extends Component {
 		}
 
 		return (
-			<div className="columns">
-				<div className="column"></div>
-				<div className="column is-one-third-desktop is-three-quarters-tablet">
-					<h1 className="title is-1 has-text-centered">Projects</h1>
-					<div className="tile is-ancestor is-vertical">
-						{this.state.data.projects.map((obj) => {
-							return (
-								<InView
-									key={obj.id}
-									triggerOnce={false}
-									threshold={0.25}
-								>
-									{({ inView, ref }) => (
-										<div ref={ref}>
-											<motion.div
-												className="tile is-parent"
-												variants={list}
-												initial="hidden"
-												animate={`${
-													inView
-														? "visible"
-														: "hidden"
-												}`}
-											>
-												<ProjectTile
-													key={obj.id}
-													imageLink={obj.imageLink}
-													imageStyle={""}
-													title={obj.name}
-													subtitle={obj.description}
-													link={obj.link}
-												/>
-											</motion.div>
-										</div>
-									)}
-								</InView>
-							);
-						})}
+			<div className="container is-fluid">
+				<div className="columns">
+					<div className="column"></div>
+					<div className="column is-one-third-desktop is-three-quarters-tablet">
+						<div className="hero-body title is-1 has-text-centered is-uppercase">
+							Projects
+						</div>
+						<div className="tile is-ancestor is-vertical">
+							{this.state.data.projects.map((obj) => {
+								return (
+									<InView
+										key={obj.id}
+										triggerOnce={false}
+										threshold={0.25}
+									>
+										{({ inView, ref }) => (
+											<div ref={ref}>
+												<motion.div
+													className="tile is-parent"
+													variants={list}
+													initial="hidden"
+													animate={`${
+														inView
+															? "visible"
+															: "hidden"
+													}`}
+												>
+													<ProjectTile
+														key={obj.id}
+														imageLink={
+															obj.imageLink
+														}
+														imageStyle={""}
+														title={obj.name}
+														subtitle={
+															obj.description
+														}
+														link={obj.link}
+													/>
+												</motion.div>
+											</div>
+										)}
+									</InView>
+								);
+							})}
+						</div>
+						<NavButton
+							buttonAlign="is-centered"
+							buttonStyle="is-primary is-rounded is-fullwidth"
+						/>
 					</div>
-					<NavButton
-						buttonAlign="is-centered"
-						buttonStyle="is-dark is-rounded is-fullwidth"
-					/>
+					<div className="column"></div>
 				</div>
-				<div className="column"></div>
 			</div>
 		);
 	}

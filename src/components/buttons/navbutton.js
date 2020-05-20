@@ -14,7 +14,7 @@ const NavButton = (props) => {
 				className={`button ${props.buttonStyle ?? "is-primary is-rounded"}`}
 				style={{ textDecoration: "none" }}
 			>
-				{props.buttonName ?? "Return to home page"}
+				{props.buttonName ?? "Return To Home Page"}
 			</Link>
 		</motion.div>
 	);

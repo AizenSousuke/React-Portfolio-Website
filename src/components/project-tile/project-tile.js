@@ -19,7 +19,7 @@ const ProjectTile = (props) => {
 				<div className="buttons">
 					<Button
 						buttonName="Check it out on Github"
-						buttonStyle="button is-link is-fullwidth"
+						buttonStyle="button is-primary is-fullwidth"
 						buttonLink={props.link}
 					/>
 				</div>
