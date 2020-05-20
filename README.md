@@ -1,10 +1,12 @@
 ### Online Portfolio 
 
-Live at - https://our-portfolio.herokuapp.com
+Live at - https://our-portfolio.herokuapp.com (Original version)
+
+Also at - https://react-portfolio-nik.herokuapp.com (My personal portfolio)
 
 ### Stack
 
-React.js using Bulma css framework and hosted on heroku
+React.js using Bulma CSS Framework and hosted on Heroku
 
 ### Dependencies
 
@@ -19,4 +21,4 @@ Edit the json file in src/components/data/data.json folder
 https://github.com/LEvinson2504
 https://github.com/AizenSousuke
 
-12 - 14 May 2020
+12th - 14th May 2020
