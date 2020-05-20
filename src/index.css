@@ -3,13 +3,13 @@ html {
 }
 
 body {
-	height: 100%; /* force the BODY element to match the height of the HTML element */
+	/*height: 100%;*/ /* force the BODY element to match the height of the HTML element */
 	/* background-color: rgb(86, 180, 235); */
 	background: linear-gradient(180deg, #d26ac2, #46c9e5);
-	margin-top: 20px;
+	/* margin-top: 20px;
 	font-family: Helvetica, sans-serif;
 	font-style: normal;
-	font-weight: 300;
+	font-weight: 300; */
 }
 
 .progress-div {

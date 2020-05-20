@@ -3,16 +3,36 @@
 // Import a Google Font
 @import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 
-// Import utilities first so can have access to the colours
-@import "../../node_modules/bulma/sass/utilities/_all.sass";
+
 
 // Set your brand colors
+// $orange: #ffad16;
+// $blue: #65cde7;
+// $green:#18c25f;
+// $list1: $blue, $green, $orange; 
+// @mixin gradient($direction, $list) {
+// 	background: -webkit-linear-gradient($direction, $list);
+// 	background: -moz-linear-gradient($direction, $list);
+// 	background: -o-linear-gradient($direction, $list);
+// 	background: linear-gradient($direction, $list);
+// }
+// .gradientcol { @include gradient(left, $list1) }
 
+$primary: #a8e6cf;
+$secondary: #dcedc1;
+$info: #ffd3b6;
+$warn: #ffaaa5;
+$link: #000000;
 
 // Update Bulma's global variables
+$body-family: Rubik;
 
+// Import utilities 
+@import "../../node_modules/bulma/sass/utilities/_all.sass";
 
 // Update some of Bulma's component variables
+$background: $info;
+$body-background-color: $secondary;
 $footer-background-color: $grey-darker;
 
 // Import all from Bulma
@@ -28,3 +48,4 @@ $footer-background-color: $grey-darker;
 @import "../../node_modules/bulma/sass/components/navbar.sass";
 @import "../../node_modules/bulma/sass/layout/hero.sass";
 @import "../../node_modules/bulma/sass/layout/section.sass";
+

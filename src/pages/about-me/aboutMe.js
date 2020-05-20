@@ -6,6 +6,7 @@ import ProgressBar from "../../components/progressbar/progress";
 import Cards from "../../components/cards/cards";
 import ProfileCard from "../../components/cards/profile-card";
 import { InView } from "react-intersection-observer";
+import NavButton from "../../components/buttons/navbutton.js";
 
 const list = {
 	hidden: {
@@ -96,12 +97,12 @@ class AboutMe extends Component {
 		} else {
 			return (
 				<motion.div
-					className="container box margin-top"
+					className="container is-fluid"
 					initial="hidden"
 					animate="visible"
 					variants={list}
 				>
-					<div className="columns margin-top">
+					<div className="columns">
 						<div className="column is-one-third">
 							<InView triggerOnce={true}>
 								{({ inView, ref }) => (
@@ -198,6 +199,14 @@ class AboutMe extends Component {
 								</div>
 							))}
 						</div>
+					</div>
+					<div className="column">
+						<NavButton
+							buttonAlign="is-centered"
+							buttonStyle="is-primary is-rounded is-fullwidth"
+							buttonLink="/projects"
+							buttonName="See My Projects"
+						/>
 					</div>
 				</motion.div>
 			);
