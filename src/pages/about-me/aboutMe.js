@@ -203,7 +203,7 @@ class AboutMe extends Component {
 					<div className="column">
 						<NavButton
 							buttonAlign="is-centered"
-							buttonStyle="is-primary is-rounded is-fullwidth"
+							buttonStyle="is-primary is-rounded"
 							buttonLink="/projects"
 							buttonName="See My Projects"
 						/>
