@@ -101,6 +101,7 @@ class AboutMe extends Component {
 					initial="hidden"
 					animate="visible"
 					variants={list}
+					style={{ marginTop: 20 }}
 				>
 					<div className="columns">
 						<div className="column is-one-third">

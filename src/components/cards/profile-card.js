@@ -14,7 +14,7 @@ export default function ProfileCard(props) {
 				<h2 className="has-text-weight-bold title">
 					{props.data.name}
 				</h2>
-				<h3 className="subtitle">{props.data.about.job_title}</h3>
+				<h3 className="subtitle is-uppercase">{props.data.about.job_title}</h3>
 				<div className="buttons">
 					<a
 						className="button is-outlined is-rounded is-fullwidth"

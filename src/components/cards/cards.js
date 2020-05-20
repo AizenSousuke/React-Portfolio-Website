@@ -13,7 +13,7 @@ export default function Cards(props) {
 				{props.card.location && (
 					<div className="has-text-weight-bold">School</div>
 				)}
-				<h2 className="has-text-black">{props.card.title ?? ""}</h2>
+				<h2 className="has-text-black is-uppercase">{props.card.title ?? ""}</h2>
 				<p className="">{props.card.description ?? ""}</p>
 				{props.card.location && (
 					<>
