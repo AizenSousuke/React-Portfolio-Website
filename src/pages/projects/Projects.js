@@ -25,6 +25,14 @@ const list = {
 			duration: 0.5,
 		},
 	},
+	hover: {
+		y: -10,
+		transition: {
+			type: "tween",
+			ease: [0.4, 0.85, 0.9, 1],
+			duration: 0.1,
+		},
+	},
 };
 
 class Projects extends Component {
@@ -57,62 +65,65 @@ class Projects extends Component {
 		}
 
 		return (
-			<div className="container is-fluid">
-				<div className="columns">
-					<div className="column"></div>
-					<div className="column is-one-third-desktop is-three-quarters-tablet">
-						<div className="hero-body title is-1 has-text-centered is-uppercase">
-							Projects
+			<>
+				<div className="container is-fluid">
+					<div className="columns">
+						<div className="column"></div>
+						<div className="column is-one-third-desktop is-three-quarters-tablet">
+							<div className="hero-body title is-1 has-text-centered is-uppercase">
+								Projects
+							</div>
+							<div className="tile is-ancestor is-vertical">
+								{this.state.data.projects.map((obj) => {
+									return (
+										<InView
+											key={obj.id}
+											triggerOnce={false}
+											threshold={0.25}
+										>
+											{({ inView, ref }) => (
+												<div ref={ref}>
+													<motion.div
+														className="tile is-parent"
+														variants={list}
+														initial="hidden"
+														whileHover="hover"
+														animate={`${
+															inView
+																? "visible"
+																: "hidden"
+														}`}
+													>
+														<ProjectTile
+															key={obj.id}
+															imageLink={
+																obj.imageLink
+															}
+															imageStyle={""}
+															title={obj.name}
+															subtitle={
+																obj.description
+															}
+															link={obj.link}
+														/>
+													</motion.div>
+												</div>
+											)}
+										</InView>
+									);
+								})}
+							</div>
+							<div className="column">
+								<NavButton
+									buttonAlign="is-centered"
+									buttonStyle="is-primary is-rounded is-fullwidth"
+								/>
+							</div>
 						</div>
-						<div className="tile is-ancestor is-vertical">
-							{this.state.data.projects.map((obj) => {
-								return (
-									<InView
-										key={obj.id}
-										triggerOnce={false}
-										threshold={0.25}
-									>
-										{({ inView, ref }) => (
-											<div ref={ref}>
-												<motion.div
-													className="tile is-parent"
-													variants={list}
-													initial="hidden"
-													animate={`${
-														inView
-															? "visible"
-															: "hidden"
-													}`}
-												>
-													<ProjectTile
-														key={obj.id}
-														imageLink={
-															obj.imageLink
-														}
-														imageStyle={""}
-														title={obj.name}
-														subtitle={
-															obj.description
-														}
-														link={obj.link}
-													/>
-												</motion.div>
-											</div>
-										)}
-									</InView>
-								);
-							})}
-						</div>
-						<div className="column">
-						<NavButton
-							buttonAlign="is-centered"
-							buttonStyle="is-primary is-rounded is-fullwidth"
-						/>
-						</div>
+						<div className="column"></div>
 					</div>
-					<div className="column"></div>
 				</div>
-			</div>
+			</>
 		);
 	}
 }

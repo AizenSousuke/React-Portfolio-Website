@@ -19,6 +19,14 @@ const anim = {
 			duration: 1,
 		},
 	},
+	hover: {
+		y: -5,
+		transition: {
+			type: "tween",
+			ease: [0.4, 0.85, 0.9, 1],
+			duration: 0.1,
+		},
+	},
 };
 
 export var ProgressBar = ({ width, percent }) => {
@@ -40,6 +48,7 @@ export var ProgressBar = ({ width, percent }) => {
 							variants={anim}
 							initial="hidden"
 							animate={`${inView ? "visible" : "hidden"}`}
+							whileHover="hover"
 						>
 							<span>
 								<div>
