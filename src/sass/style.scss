@@ -20,9 +20,9 @@
 
 $primary: #a8e6cf;
 $secondary: #dcedc1;
-$info: #ffd3b6;
-$warn: #ffaaa5;
-$link: #000000;
+$info: #ff9d5c;
+$warn: #ff635b;
+$link: #454655;
 
 // Update Bulma's global variables
 $body-family: Rubik;
@@ -33,7 +33,7 @@ $body-family: Rubik;
 // Update some of Bulma's component variables
 $background: $info;
 $body-background-color: $secondary;
-$footer-background-color: $grey-darker;
+$footer-background-color: $primary;
 
 // Import all from Bulma
 @import "../../node_modules/bulma/bulma.sass";

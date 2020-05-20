@@ -16,7 +16,15 @@ const anim = {
 		opacity: 1,
 		transition: {
 			delay: 0.25,
-			duration: 1
+			duration: 1,
+		},
+	},
+	hover: {
+		y: -5,
+		transition: {
+			type: "tween",
+			ease: [0.4, 0.85, 0.9, 1],
+			duration: 0.1,
 		},
 	},
 };
@@ -40,13 +48,19 @@ export var ProgressBar = ({ width, percent }) => {
 							variants={anim}
 							initial="hidden"
 							animate={`${inView ? "visible" : "hidden"}`}
+							whileHover="hover"
 						>
-							<progress
-								className="progress is-primary"
-								value={width}
-								max={width}
-								style={{ width: `${value}%` }}
-							></progress>
+							<span>
+								<div>
+									<progress
+										className="progress is-info"
+										value={percent}
+										max={width}
+										// style={{ width: `${value}%` }}
+									></progress>
+								</div>
+								<div className="has-text-right">{percent}</div>
+							</span>
 						</motion.div>
 					</div>
 				)}

@@ -3,10 +3,10 @@ import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 // import "./index.css";
 import Projects from "./pages/projects/Projects";
-import Home from "./pages/home/home";
+import Home from "./pages/home/Home";
 import Social from "./pages/social/Social";
 import Navbar from "./components/navbar/navbar";
-import AboutMe from "./pages/about-me/aboutMe";
+import AboutMe from "./pages/about-me/AboutMe";
 
 function Portfolio() {
 	return (
