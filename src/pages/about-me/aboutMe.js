@@ -91,6 +91,7 @@ class AboutMe extends Component {
 			});
 		}
 	}
+	
 	render() {
 		if (this.state.isFetching) {
 			return "Not loaded yet";

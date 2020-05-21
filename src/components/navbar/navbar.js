@@ -11,19 +11,25 @@ export default function Navbar() {
 		>
 			<div className="navbar-brand">
 				<span className="navbar-item">
-					<i className="fas fa-home"></i> &nbsp;
+					<i className="fas fa-home"></i>
 					<Link to="/" className="">
 						Home
 					</Link>
 				</span>
 				<span className="navbar-item">
-					<i className="fas fa-tasks"></i> &nbsp;
+					<i className="fas fa-tasks"></i>
 					<Link to="/projects" className="">
 						Projects
 					</Link>
 				</span>
 				<span className="navbar-item">
-					<i className="fas fa-user-circle"></i> &nbsp;
+					<i className="fas fa-history"></i>
+					<Link to="/experiences" className="">
+						Experiences
+					</Link>
+				</span>
+				<span className="navbar-item">
+					<i className="fas fa-user-circle"></i>
 					<Link to="/about" className="">
 						About
 					</Link>

@@ -69,7 +69,7 @@ class Social extends Component {
 						</div>
 						<div className="has-text-dark">
 							Copyright 2020{" "}
-							<i class="fa fa-copyright" aria-hidden="true"></i>
+							<i className="fa fa-copyright" aria-hidden="true"></i>
 						</div>
 					</div>
 				</footer>
