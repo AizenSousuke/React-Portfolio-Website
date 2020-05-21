@@ -10,11 +10,15 @@ function TimelineCard(props) {
 				<p className="heading">{props.data.month ?? "May 2012"}</p>
 				<div className="message is-info">
 					<div className="message-header">
-						<h3>{props.data.header ?? "header"}</h3>
+						<div className="column">{props.data.header ?? "header"}</div>
+						<div className="column tag is-link has-text-weight-bold">{props.data.subtitle ?? "subtitle"}</div>
 					</div>
 					<div className="message-body">
-						{props.data.content ??
-							"Ex anim do id aute aute. Quis anim aliqua eu eiusmod occaecat. Consectetur reprehenderit do commodo do. Occaecat eu magna in deserunt. Qui in aliquip ipsum consequat ipsum ea reprehenderit."}
+						<p>{props.data.jobscope ?? ""}</p>
+						<div className="is-size-7">
+							{props.data.content ??
+								"Ex anim do id aute aute. Quis anim aliqua eu eiusmod occaecat. Consectetur reprehenderit do commodo do. Occaecat eu magna in deserunt. Qui in aliquip ipsum consequat ipsum ea reprehenderit."}
+						</div>
 					</div>
 				</div>
 			</div>

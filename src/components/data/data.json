@@ -31,7 +31,37 @@
 	"experiences": [
 		{
 			"month": "May 2012",
+			"header": "Graduated from Republic Polytechnic",
+			"subtitle": "Singapore",
+			"jobscope": "Designing games with a passion",
+			"content": "Diploma with Merit in Game Design | GPA 3.71/4.0"
+		},
+		{
+			"month": "July 2014",
+			"header": "Technical Assistant",
+			"subtitle": "NCS PTE LTD",
+			"jobscope": "",
+			"content": "NCS Pte Ltd"
+		},
+		{
+			"month": "May 2012",
 			"header": "Graduated from Republic Polytechnic, Singapore",
+			"subtitle": "",
+			"jobscope": "",
+			"content": "Diploma with Merit in Game Design | GPA 3.71/4.0"
+		},
+		{
+			"month": "May 2012",
+			"header": "Graduated from Republic Polytechnic, Singapore",
+			"subtitle": "",
+			"jobscope": "",
+			"content": "Diploma with Merit in Game Design | GPA 3.71/4.0"
+		},
+		{
+			"month": "May 2012",
+			"header": "Graduated from Republic Polytechnic, Singapore",
+			"subtitle": "",
+			"jobscope": "",
 			"content": "Diploma with Merit in Game Design | GPA 3.71/4.0"
 		}
 	],
