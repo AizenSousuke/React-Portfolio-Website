@@ -120,6 +120,7 @@ class AboutMe extends Component {
 												data={this.state.data}
 											/>
 										</motion.div>
+										<div className="column"></div>
 										<motion.div
 											initial="hidden"
 											variants={list}

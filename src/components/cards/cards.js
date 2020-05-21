@@ -3,9 +3,8 @@ import React from "react";
 export default function Cards(props) {
 	return (
 		<div className="card" style={{ borderRadius: 10 }}>
-			<div className="card-header"></div>
 			<img
-				className="card-image"
+				className="image card-image"
 				src={props.card.imageLink ?? ""}
 				alt={props.card.title ?? ""}
 			/>

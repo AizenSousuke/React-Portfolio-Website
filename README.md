@@ -1,6 +1,6 @@
 ### Online Portfolio 
 
-Live at - https://our-portfolio.herokuapp.com (Original version)
+Live at - https://our-portfolio.herokuapp.com (Original forked from version)
 
 Also at - https://react-portfolio-nik.herokuapp.com (My personal portfolio)
 
@@ -10,7 +10,8 @@ React.js using Bulma CSS Framework and hosted on Heroku
 
 ### Dependencies
 
-Used Framer and Framer Motion for Animations.
+Framer and Framer Motion for Animations.
+Bulma Timeline Extensions for Timeline.
 
 ### How do I add my data?
 
