@@ -7,6 +7,7 @@ import Home from "./pages/home/Home";
 import Social from "./pages/social/Social";
 import Navbar from "./components/navbar/navbar";
 import AboutMe from "./pages/about-me/AboutMe";
+import Experiences from "./pages/experiences/Experiences";
 
 function Portfolio() {
 	return (
@@ -18,6 +19,9 @@ function Portfolio() {
 				<Switch>
 					<Route path="/projects">
 						<Projects />
+					</Route>
+					<Route path="/experiences">
+						<Experiences />
 					</Route>
 					<Route path="/about">
 						<AboutMe />

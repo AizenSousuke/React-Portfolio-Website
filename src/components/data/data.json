@@ -28,6 +28,43 @@
 			"imageLink": "http://loremflickr.com/1024/576/Food"
 		}
 	],
+	"experiences": [
+		{
+			"month": "May 2012",
+			"header": "Graduated from Republic Polytechnic",
+			"subtitle": "Singapore",
+			"jobscope": "Designing games with a passion",
+			"content": "Diploma with Merit in Game Design | GPA 3.71/4.0"
+		},
+		{
+			"month": "July 2014",
+			"header": "Technical Assistant",
+			"subtitle": "NCS Pte Ltd",
+			"jobscope": "Technical Support in a school environment",
+			"content": "Balestier Hill Secondary"
+		},
+		{
+			"month": "October 2015",
+			"header": "Armed Security Officer",
+			"subtitle": "Aetos Pte Ltd",
+			"jobscope": "Checking of vehicles and escorting of personnel",
+			"content": "Woodland Checkpoint"
+		},
+		{
+			"month": "September 2018",
+			"header": "IT Technical Support Officer",
+			"subtitle": "ST Electronics",
+			"jobscope": "Airfield Surface Movement and Ground Control System Officer",
+			"content": "Changi International Airport"
+		},
+		{
+			"month": "Sept 2019",
+			"header": "Performance Tester",
+			"subtitle": "NCS Pte Ltd",
+			"jobscope": "Testing of Applications and Government Websites",
+			"content": "HP Loadrunner"
+		}
+	],
 	"social": [
 		{
 			"link": "https://instagram.com/"

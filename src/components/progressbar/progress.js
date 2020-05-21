@@ -30,11 +30,11 @@ const anim = {
 };
 
 export var ProgressBar = ({ width, percent }) => {
-	const [value, setValue] = React.useState(0);
+	// const [value, setValue] = React.useState(0);
 
-	React.useEffect(() => {
-		setValue((percent * width) / 100);
-	}, [percent, width]);
+	// React.useEffect(() => {
+	// 	setValue((percent * width) / 100);
+	// }, [percent, width]);
 
 	return (
 		<div>

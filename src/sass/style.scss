@@ -27,6 +27,7 @@ $link: #454655;
 // Update Bulma's global variables
 $body-family: Rubik;
 
+
 // Import utilities 
 @import "../../node_modules/bulma/sass/utilities/_all.sass";
 
@@ -34,6 +35,9 @@ $body-family: Rubik;
 $background: $info;
 $body-background-color: $secondary;
 $footer-background-color: $primary;
+
+// Timeline
+@import "../../node_modules/bulma-timeline/src/sass/index.sass";
 
 // Import all from Bulma
 @import "../../node_modules/bulma/bulma.sass";
@@ -48,4 +52,5 @@ $footer-background-color: $primary;
 @import "../../node_modules/bulma/sass/components/navbar.sass";
 @import "../../node_modules/bulma/sass/layout/hero.sass";
 @import "../../node_modules/bulma/sass/layout/section.sass";
+
 
