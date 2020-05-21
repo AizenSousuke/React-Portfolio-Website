@@ -7,6 +7,14 @@ import Home from "./pages/home/Home";
 import Social from "./pages/social/Social";
 import Navbar from "./components/navbar/navbar";
 import AboutMe from "./pages/about-me/AboutMe";
+import ParticlesBg from "particles-bg";
+
+const config = {
+	num: [0.01],
+	v: [1],
+	scale: [1],
+	alpha: [0.5, 0],
+}
 
 function Portfolio() {
 	return (
@@ -27,6 +35,12 @@ function Portfolio() {
 					</Route>
 				</Switch>
 				<Social />
+				<ParticlesBg 
+					bg={true}
+					type={"cobweb"}
+					color={"#8bc2ff"}
+					config={config}
+				/>
 			</Router>
 		</>
 	);
