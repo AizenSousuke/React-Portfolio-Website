@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Data from "../../components/data/data.json";
 import { motion } from "framer-motion";
+import Timeline from "../../components/timeline/timeline";
 
 const list = {
 	hidden: {
@@ -49,21 +50,24 @@ export default class Experiences extends Component {
 			return "Not loaded yet";
 		} else {
 			return (
-				<motion.div
-					className="container is-fluid"
-					initial="hidden"
-					animate="visible"
-					variants={list}
-					style={{ marginTop: 20 }}
-				>
-					<div className="columns">
-						<div className="column">
-							<div className="title is-1 has-text-centered is-uppercase">
-								Experiences
+				<>
+					<motion.div
+						className="container is-fluid"
+						initial="hidden"
+						animate="visible"
+						variants={list}
+						style={{ marginTop: 20 }}
+					>
+						<div className="columns">
+							<div className="column">
+								<div className="title is-3 has-text-centered is-uppercase">
+									Work Experiences and Education
+								</div>
+								<Timeline data={this.state.data.experiences} />
 							</div>
 						</div>
-					</div>
-				</motion.div>
+					</motion.div>
+				</>
 			);
 		}
 	}

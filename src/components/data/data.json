@@ -28,6 +28,13 @@
 			"imageLink": "http://loremflickr.com/1024/576/Food"
 		}
 	],
+	"experiences": [
+		{
+			"month": "May 2012",
+			"header": "Graduated from Republic Polytechnic, Singapore",
+			"content": "Diploma with Merit in Game Design | GPA 3.71/4.0"
+		}
+	],
 	"social": [
 		{
 			"link": "https://instagram.com/"
