@@ -39,30 +39,30 @@
 		{
 			"month": "July 2014",
 			"header": "Technical Assistant",
-			"subtitle": "NCS PTE LTD",
-			"jobscope": "",
-			"content": "NCS Pte Ltd"
+			"subtitle": "NCS Pte Ltd",
+			"jobscope": "Technical Support in a school environment",
+			"content": "Balestier Hill Secondary"
 		},
 		{
-			"month": "May 2012",
-			"header": "Graduated from Republic Polytechnic, Singapore",
-			"subtitle": "",
-			"jobscope": "",
-			"content": "Diploma with Merit in Game Design | GPA 3.71/4.0"
+			"month": "October 2015",
+			"header": "Armed Security Officer",
+			"subtitle": "Aetos Pte Ltd",
+			"jobscope": "Checking of vehicles and escorting of personnel",
+			"content": "Woodland Checkpoint"
 		},
 		{
-			"month": "May 2012",
-			"header": "Graduated from Republic Polytechnic, Singapore",
-			"subtitle": "",
-			"jobscope": "",
-			"content": "Diploma with Merit in Game Design | GPA 3.71/4.0"
+			"month": "September 2018",
+			"header": "IT Technical Support Officer",
+			"subtitle": "ST Electronics",
+			"jobscope": "Airfield Surface Movement and Ground Control System Officer",
+			"content": "Changi International Airport"
 		},
 		{
-			"month": "May 2012",
-			"header": "Graduated from Republic Polytechnic, Singapore",
-			"subtitle": "",
-			"jobscope": "",
-			"content": "Diploma with Merit in Game Design | GPA 3.71/4.0"
+			"month": "Sept 2019",
+			"header": "Performance Tester",
+			"subtitle": "NCS Pte Ltd",
+			"jobscope": "Testing of Applications and Government Websites",
+			"content": "HP Loadrunner"
 		}
 	],
 	"social": [

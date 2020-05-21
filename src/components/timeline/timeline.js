@@ -8,16 +8,21 @@ function Timeline(props) {
 				<header className="timeline-header">
 					<span className="tag is-medium is-danger">Current</span>
 				</header>
-				<div className="timeline-item">
-					<div className="timeline-marker"></div>
-					<div className="timeline-content">
-						<p className="heading">January 2016</p>
-						<p>Timeline content - Can include any HTML element</p>
-					</div>
-				</div>
+				<TimelineCard data={props.data[4]} />
+				<header className="timeline-header">
+					<span className="tag is-medium is-warning">2018 - 2019</span>
+				</header>
+				<TimelineCard data={props.data[3]} />
+				<header className="timeline-header">
+					<span className="tag is-medium is-warning">2015 - 2017</span>
+				</header>
+				<TimelineCard data={props.data[2]} />
+				<header className="timeline-header">
+					<span className="tag is-medium is-warning">2014 - 2015</span>
+				</header>
 				<TimelineCard data={props.data[1]} />
 				<header className="timeline-header">
-					<span className="tag is-medium is-warning">2012</span>
+					<span className="tag is-medium is-warning">2009 - 2012</span>
 				</header>
 				<TimelineCard data={props.data[0]} />
 				<div className="timeline-header">

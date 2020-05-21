@@ -2,8 +2,8 @@ import React from "react";
 
 function TimelineCard(props) {
 	return (
-		<div className="timeline-item">
-			<div className="timeline-marker is-icon">
+		<div className="timeline-item is-danger">
+			<div className="timeline-marker is-icon is-danger">
 				<i className="fa fa-flag"></i>
 			</div>
 			<div className="timeline-content">
