@@ -8,11 +8,13 @@ import Social from "./pages/social/SocialPage";
 import Navbar from "./components/navbar/navbar";
 import AboutMe from "./pages/about-me/AboutMePage";
 import Experiences from "./pages/experiences/Experiences";
+import ScrollToTop from "./components/helper/ScrollToTop";
 
 function Portfolio() {
 	return (
 		<>
 			<Router>
+				<ScrollToTop />
 				<Navbar />
 				{/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL.  */}
