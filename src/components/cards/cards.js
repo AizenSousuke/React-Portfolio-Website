@@ -7,6 +7,7 @@ export default function Cards(props) {
 				className="image card-image"
 				src={props.card.imageLink ?? ""}
 				alt={props.card.title ?? ""}
+				style={{borderTopLeftRadius: 10, borderTopRightRadius: 10}}
 			/>
 			<div className="card-content">
 				{props.card.location && (
