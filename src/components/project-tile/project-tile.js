@@ -25,7 +25,7 @@ const ProjectTile = (props) => {
 									<ContainerDimensions>
 										{({width, height}) => 
 											//<Shimmer width={width} height={height} />
-											<Shimmer width={width > 480 ? 480 : width} height={height > 272 ? 272 : height} />
+											<Shimmer width={width} height={height > 272 ? 272 : height} />
 										}
 									</ContainerDimensions>}
 							/>
