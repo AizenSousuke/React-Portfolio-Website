@@ -3,7 +3,7 @@
 	"contact": "+65 8666 0407",
 	"email": "puteranikdimas@gmail.com",
 	"title": "I create web apps, one commit at a time.",
-	"subtitle": "My name is Nik and I'm a web apps programmer. I have a passion for building technologies, websites, applications, games and flight simulation.",
+	"subtitle": "My name is Nik and I'm a web application developer. I am passionate in learning new technologies, building websites, applications, games and also in learning how to fly a fighter jet through flight simulation software.",
 	"subtitle_button": "Learn more about me",
 	"projects": [
 		{
@@ -86,7 +86,7 @@
 	"about": {
 		"profile_picture": "http://loremflickr.com/512/512/king",
 		"job_title": "Web App Developer",
-		"summary": "I think about code and systems all the time. When I'm not at my day job, I love to create web applications that solves problems.",
+		"summary": "I think about code and systems all the time. When I'm not at my day job, I experiment with new web technologies such as Docker and serverless architecture.",
 		"signature": "http://loremflickr.com/1024/576/signature",
 		"education": {
 			"title": "Republic Polytechnic",
@@ -137,6 +137,12 @@
 				"title": "Flight Simulation",
 				"description": "FA-18C",
 				"imageLink": "http://loremflickr.com/1024/576/F18"
+			},
+			{
+				"id": 8,
+				"title": "ASP Webforms",
+				"description": "Microsoft ASP Webforms",
+				"imageLink": "http://loremflickr.com/1024/576/webforms"
 			}
 		],
 		"skills": [
