@@ -8,6 +8,10 @@ function Timeline(props) {
 				<header className="timeline-header">
 					<span className="tag is-medium is-danger">Current</span>
 				</header>
+				<TimelineCard data={props.data[5]} />
+				<header className="timeline-header">
+					<span className="tag is-medium is-warning">2019 - 2020</span>
+				</header>
 				<TimelineCard data={props.data[4]} />
 				<header className="timeline-header">
 					<span className="tag is-medium is-warning">2018 - 2019</span>

@@ -59,12 +59,14 @@ export default class Experiences extends Component {
 						style={{ marginTop: 20 }}
 					>
 						<div className="columns">
+							<div className="column"></div>
 							<div className="column">
 								<div className="title is-3 has-text-centered is-uppercase">
 									Work Experiences and Education
 								</div>
 								<Timeline data={this.state.data.experiences} />
 							</div>
+							<div className="column"></div>
 						</div>
 					</motion.div>
 				</>

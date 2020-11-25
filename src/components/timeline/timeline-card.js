@@ -6,7 +6,7 @@ function TimelineCard(props) {
 			<div className="timeline-marker is-icon is-danger">
 				<i className="fa fa-flag"></i>
 			</div>
-			<div className="timeline-content">
+			<div className="timeline-content fullwidth">
 				<p className="heading">{props.data.month ?? "May 2012"}</p>
 				<div className="message is-info">
 					<div className="message-header">
