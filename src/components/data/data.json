@@ -11,21 +11,21 @@
 			"name": "React Portfolio",
 			"description": "A portfolio website created using React JS with Levinson from India in a matter of 3 days via Live Share on Visual Studio Code. We started on the 12th and completed on the 15th of May.",
 			"link": "https://github.com/AizenSousuke/React-Portfolio-Website",
-			"imageLink": "https://cdn.worldvectorlogo.com/logos/react.svg"
+			"imageLink": "portfolio"
 		},
 		{
 			"id": 2,
 			"name": "Blog",
 			"description": "Created a blog with Dot Net Core 3.1 as its backend and React JS as the frontend. I'm the backend developer with 3 other people working on the project. We started March and the project is still pending completion.",
 			"link": "https://github.com/AizenSousuke/DotNetCoreReactREST",
-			"imageLink": "http://loremflickr.com/1024/576/blog"
+			"imageLink": "blog"
 		},
 		{
 			"id": 3,
 			"name": "Recipe List",
 			"description": "A recipe list created using the Ionic Framework. It is using Firebase as its backend and Imgur API as its image hoster.",
 			"link": "https://github.com/AizenSousuke/Angular-Ionic-CRUD",
-			"imageLink": "http://loremflickr.com/1024/576/Food"
+			"imageLink": "recipe"
 		}
 	],
 	"experiences": [

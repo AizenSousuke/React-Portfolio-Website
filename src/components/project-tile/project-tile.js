@@ -16,10 +16,11 @@ const ProjectTile = (props) => {
 						alt="button"
 					/> */}
 							<Image
-								src={`${
-									props.imageLink ??
-									"http://loremflickr.com/480/272/default"
-								}`}
+								// src={`${
+								// 	props.imageLink ??
+								// 	"http://loremflickr.com/480/272/default"
+								// }`}
+								src={require("../../images/" + props.imageLink + ".png")}
 								alt="button"
 								fallback={
 									<ContainerDimensions>
