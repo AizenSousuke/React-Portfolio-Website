@@ -6,7 +6,7 @@ export default function ProfileCard(props) {
 			<figure className="image is-fullwidth">
 				<img
 					className=""
-					src={props.data.about.profile_picture}
+					src={require("../../images/" + props.data.about.profile_picture + ".png")}
 					alt="profile-pic"
 				/>
 			</figure>

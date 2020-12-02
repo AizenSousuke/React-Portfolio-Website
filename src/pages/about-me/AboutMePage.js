@@ -91,7 +91,7 @@ class AboutMe extends Component {
 			});
 		}
 	}
-	
+
 	render() {
 		if (this.state.isFetching) {
 			return "Not loaded yet";
@@ -134,10 +134,12 @@ class AboutMe extends Component {
 													Summary{" "}
 												</h2>
 												<h2 className="message-body">
-													{
-														this.state.data.about
-															.summary
-													}
+													<b>
+														{
+															this.state.data
+																.about.summary
+														}
+													</b>
 												</h2>
 											</article>
 										</motion.div>
