@@ -1,5 +1,5 @@
 {
-	"name": "Putera Nik",
+	"name": "Nik",
 	"contact": "+65 8666 0407",
 	"email": "puteranikdimas@gmail.com",
 	"title": "I create web apps, one commit at a time.",
@@ -11,21 +11,21 @@
 			"name": "React Portfolio",
 			"description": "A portfolio website created using React JS with Levinson from India in a matter of 3 days via Live Share on Visual Studio Code. We started on the 12th and completed on the 15th of May.",
 			"link": "https://github.com/AizenSousuke/React-Portfolio-Website",
-			"imageLink": "https://cdn.worldvectorlogo.com/logos/react.svg"
+			"imageLink": "portfolio"
 		},
 		{
 			"id": 2,
 			"name": "Blog",
 			"description": "Created a blog with Dot Net Core 3.1 as its backend and React JS as the frontend. I'm the backend developer with 3 other people working on the project. We started March and the project is still pending completion.",
 			"link": "https://github.com/AizenSousuke/DotNetCoreReactREST",
-			"imageLink": "http://loremflickr.com/1024/576/blog"
+			"imageLink": "blog"
 		},
 		{
 			"id": 3,
 			"name": "Recipe List",
 			"description": "A recipe list created using the Ionic Framework. It is using Firebase as its backend and Imgur API as its image hoster.",
 			"link": "https://github.com/AizenSousuke/Angular-Ionic-CRUD",
-			"imageLink": "http://loremflickr.com/1024/576/Food"
+			"imageLink": "recipe"
 		}
 	],
 	"experiences": [
@@ -84,9 +84,9 @@
 		}
 	],
 	"about": {
-		"profile_picture": "http://loremflickr.com/512/512/king",
+		"profile_picture": "avatar",
 		"job_title": "Web App Developer",
-		"summary": "I think about code and systems all the time. When I'm not at my day job, I experiment with new web technologies such as Docker and serverless architecture.",
+		"summary": "I think about code and systems all the time. When I'm not at my day job, I experiment with new web technologies such as Docker and serverless architecture. Currently I'm learning about JAMStack with NextJS.",
 		"signature": "http://loremflickr.com/1024/576/signature",
 		"education": {
 			"title": "Republic Polytechnic",
@@ -95,11 +95,12 @@
 			"location": "Singapore",
 			"professionalcert": "Industry Connect Job Ready Software Development Course"
 		},
+		"other_cert_link": "https://industryconnect.io/Authority/ViewCertificate?guid=620a0eb4-039d-417c-8d82-6d2d68d560eb",
 		"expertise": [
 			{
 				"id": 1,
 				"title": "React",
-				"description": "React Framework",
+				"description": "React Framework, Ionic, NextJS (Currently learning)",
 				"imageLink": "http://loremflickr.com/1024/576/reactjs"
 			},
 			{
@@ -111,7 +112,7 @@
 			{
 				"id": 3,
 				"title": "Games Development",
-				"description": "Unity",
+				"description": "Unity, Game Maker",
 				"imageLink": "http://loremflickr.com/1024/576/gamesdevelopment"
 			},
 			{
@@ -123,7 +124,7 @@
 			{
 				"id": 5,
 				"title": "Dev Ops",
-				"description": "Docker",
+				"description": "Docker, Github, Azure, Amazon",
 				"imageLink": "http://loremflickr.com/1024/576/devops"
 			},
 			{
@@ -141,7 +142,7 @@
 			{
 				"id": 8,
 				"title": "ASP Webforms",
-				"description": "Microsoft ASP Webforms",
+				"description": "Microsoft ASP Webforms, Telerik UI Controls",
 				"imageLink": "http://loremflickr.com/1024/576/webforms"
 			}
 		],

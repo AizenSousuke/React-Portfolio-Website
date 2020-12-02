@@ -7,6 +7,8 @@ import Cards from "../../components/cards/cards";
 import ProfileCard from "../../components/cards/profile-card";
 import { InView } from "react-intersection-observer";
 import NavButton from "../../components/buttons/navbutton.js";
+import { Link } from "react-router-dom";
+import button from "../../components/buttons/button";
 
 const list = {
 	hidden: {
@@ -91,7 +93,7 @@ class AboutMe extends Component {
 			});
 		}
 	}
-	
+
 	render() {
 		if (this.state.isFetching) {
 			return "Not loaded yet";
@@ -134,10 +136,12 @@ class AboutMe extends Component {
 													Summary{" "}
 												</h2>
 												<h2 className="message-body">
-													{
-														this.state.data.about
-															.summary
-													}
+													<b>
+														{
+															this.state.data
+																.about.summary
+														}
+													</b>
 												</h2>
 											</article>
 										</motion.div>
@@ -186,6 +190,12 @@ class AboutMe extends Component {
 								className="message-body"
 								card={this.state.data.about.education}
 							/>
+							<div className="card" style={{ borderRadius: 10, marginTop: '10px' }}>
+								<div className="card-content">
+									{/* <Link to={`${this.state.data.about.other_cert_link}`} target="_blank" title="Link to certificate">Link to certificate</Link> */}
+									<div className="button is-white is-fullwidth" onClick={() => {window.location.href = `${this.state.data.about.other_cert_link}`}}>Certificate Link</div>
+								</div>
+							</div>
 						</div>
 						<div className="column is-two-thirds">
 							<h2 className="title has-text-dark"> Skills </h2>
