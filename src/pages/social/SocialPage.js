@@ -62,7 +62,7 @@ class Social extends Component {
 										}
 										className="has-text-dark is-inline-block"
 									>
-										<i className="fab fa-github"></i>
+										<i className="fab fa-github"></i> <span className="is-size-3 is-family-code">Github</span>
 									</motion.a>
 								</h1>
 							</div>
