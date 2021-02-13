@@ -1,8 +1,8 @@
 {
 	"name": "Nik",
-	"contact": "+65 8666 0407",
+	"contact": "",
 	"email": "puteranikdimas@gmail.com",
-	"title": "I create web apps, one commit at a time.",
+	"title": "I create web apps to solve business needs",
 	"subtitle": "My name is Nik and I'm a web application developer. I am passionate in learning new technologies, building websites, applications, games and also in learning how to fly a fighter jet through flight simulation software.",
 	"subtitle_button": "Learn more about me",
 	"projects": [
@@ -100,7 +100,7 @@
 			{
 				"id": 1,
 				"title": "React",
-				"description": "React Framework, Ionic, NextJS (Currently learning)",
+				"description": "React Framework, Ionic, React-Native",
 				"imageLink": "http://loremflickr.com/1024/576/reactjs"
 			},
 			{
@@ -118,7 +118,7 @@
 			{
 				"id": 4,
 				"title": "Video Editing",
-				"description": "After Effects and Premiere Pro",
+				"description": "Adobe After Effects and Premiere Pro",
 				"imageLink": "http://loremflickr.com/1024/576/videoediting"
 			},
 			{
@@ -141,7 +141,7 @@
 			},
 			{
 				"id": 8,
-				"title": "ASP Webforms",
+				"title": "ASP DOT NET Webforms",
 				"description": "Microsoft ASP Webforms, Telerik UI Controls",
 				"imageLink": "http://loremflickr.com/1024/576/webforms"
 			}
@@ -151,7 +151,7 @@
 				"id": 1,
 				"icon": "fas fa-cogs",
 				"title": "C#",
-				"proficiency": 65
+				"proficiency": 75
 			},
 			{
 				"id": 2,
@@ -169,7 +169,7 @@
 				"id": 4,
 				"icon": "fab fa-docker",
 				"title": "Docker",
-				"proficiency": 80
+				"proficiency": 70
 			},
 			{
 				"id": 5,
