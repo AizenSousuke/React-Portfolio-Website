@@ -7,8 +7,6 @@ import Cards from "../../components/cards/cards";
 import ProfileCard from "../../components/cards/profile-card";
 import { InView } from "react-intersection-observer";
 import NavButton from "../../components/buttons/navbutton.js";
-import { Link } from "react-router-dom";
-import button from "../../components/buttons/button";
 
 const list = {
 	hidden: {
@@ -155,7 +153,7 @@ class AboutMe extends Component {
 								{this.state.data.about.expertise.map((item) => (
 									<InView
 										key={item.id}
-										triggerOnce={false}
+										triggerOnce={true}
 										threshold={0.25}
 									>
 										{({ inView, ref }) => (
@@ -190,10 +188,10 @@ class AboutMe extends Component {
 								className="message-body"
 								card={this.state.data.about.education}
 							/>
-							<div className="card" style={{ borderRadius: 10, marginTop: '10px' }}>
-								<div className="card-content">
+							<div className="card" style={{ borderRadius: 10, marginTop: '10px', backgroundColor: "darkorange" }}>
+								<div className="card-content" style={{padding: 5}}>
 									{/* <Link to={`${this.state.data.about.other_cert_link}`} target="_blank" title="Link to certificate">Link to certificate</Link> */}
-									<div className="button is-white is-fullwidth" onClick={() => {window.location.href = `${this.state.data.about.other_cert_link}`}}>Certificate Link</div>
+									<div className="button is-light is-fullwidth" onClick={() => {window.location.href = `${this.state.data.about.other_cert_link}`}}>Certificate Link</div>
 								</div>
 							</div>
 						</div>

@@ -1,6 +1,6 @@
 {
 	"name": "Nik",
-	"contact": "",
+	"contact": "+65 8666 0407",
 	"email": "puteranikdimas@gmail.com",
 	"title": "I create web apps to solve business needs",
 	"subtitle": "My name is Nik and I'm a web application developer. I am passionate in learning new technologies, building websites, applications, games and also in learning how to fly a fighter jet through flight simulation software.",
@@ -86,12 +86,12 @@
 	"about": {
 		"profile_picture": "avatar",
 		"job_title": "Web App Developer",
-		"summary": "I think about code and systems all the time. When I'm not at my day job, I experiment with new web technologies such as Docker and serverless architecture. Currently I'm learning about JAMStack with NextJS.",
-		"signature": "http://loremflickr.com/1024/576/signature",
+		"summary": "I think about code and systems all the time. When I'm not at my day job, I experiment with new web technologies such as Docker and serverless architecture. Currently I'm learning about frontend frameworks like ReactJS, Storybook and NextJS.",
+		"signature": "Nik",
 		"education": {
 			"title": "Republic Polytechnic",
 			"description": "Diploma in Game Design",
-			"imageLink": "http://loremflickr.com/1024/576/school",
+			"imageLink": "https://www.tnp.sg/sites/default/files/styles/rl480/public/articles/2018/04/26/republicpoly.jpg",
 			"location": "Singapore",
 			"professionalcert": "Industry Connect Job Ready Software Development Course"
 		},
@@ -101,49 +101,43 @@
 				"id": 1,
 				"title": "React",
 				"description": "React Framework, Ionic, React-Native",
-				"imageLink": "http://loremflickr.com/1024/576/reactjs"
+				"imageLink": "https://imgur.com/o1zY60n.png"
 			},
 			{
 				"id": 2,
-				"title": "ASP Dot Net Core 3.1",
-				"description": "C#",
-				"imageLink": "http://loremflickr.com/1024/576/c#dotnet"
+				"title": "ASP .Net",
+				"description": "C#, .Net Core, Microsoft ASP Webforms, Telerik UI Controls",
+				"imageLink": "https://imgur.com/0Ceufi8.png"
 			},
 			{
 				"id": 3,
 				"title": "Games Development",
 				"description": "Unity, Game Maker",
-				"imageLink": "http://loremflickr.com/1024/576/gamesdevelopment"
+				"imageLink": "https://imgur.com/nSAXbxn.png"
 			},
 			{
 				"id": 4,
 				"title": "Video Editing",
 				"description": "Adobe After Effects and Premiere Pro",
-				"imageLink": "http://loremflickr.com/1024/576/videoediting"
+				"imageLink": "https://imgur.com/KxEKMTP.png"
 			},
 			{
 				"id": 5,
 				"title": "Dev Ops",
 				"description": "Docker, Github, Azure, Amazon",
-				"imageLink": "http://loremflickr.com/1024/576/devops"
+				"imageLink": "https://imgur.com/NrCMtF8.png"
 			},
 			{
 				"id": 6,
 				"title": "MySQL",
 				"description": "Linq, EF Framework",
-				"imageLink": "http://loremflickr.com/1024/576/SQL"
+				"imageLink": "https://imgur.com/My0BGwI.png"
 			},
 			{
 				"id": 7,
 				"title": "Flight Simulation",
 				"description": "FA-18C",
-				"imageLink": "http://loremflickr.com/1024/576/F18"
-			},
-			{
-				"id": 8,
-				"title": "ASP DOT NET Webforms",
-				"description": "Microsoft ASP Webforms, Telerik UI Controls",
-				"imageLink": "http://loremflickr.com/1024/576/webforms"
+				"imageLink": "https://imgur.com/esfbHUP.png"
 			}
 		],
 		"skills": [
