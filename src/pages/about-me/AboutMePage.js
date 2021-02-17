@@ -188,10 +188,10 @@ class AboutMe extends Component {
 								className="message-body"
 								card={this.state.data.about.education}
 							/>
-							<div className="card" style={{ borderRadius: 10, marginTop: '10px' }}>
-								<div className="card-content">
+							<div className="card" style={{ borderRadius: 10, marginTop: '10px', backgroundColor: "darkorange" }}>
+								<div className="card-content" style={{padding: 5}}>
 									{/* <Link to={`${this.state.data.about.other_cert_link}`} target="_blank" title="Link to certificate">Link to certificate</Link> */}
-									<div className="button is-white is-fullwidth" onClick={() => {window.location.href = `${this.state.data.about.other_cert_link}`}}>Certificate Link</div>
+									<div className="button is-light is-fullwidth" onClick={() => {window.location.href = `${this.state.data.about.other_cert_link}`}}>Certificate Link</div>
 								</div>
 							</div>
 						</div>

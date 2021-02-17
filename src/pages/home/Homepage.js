@@ -81,7 +81,7 @@ class Home extends Component {
 										buttonName={
 											this.state.data.subtitle_button
 										}
-										buttonStyle="is-primary is-large"
+										buttonStyle="is-dark is-large"
 										buttonAlign="is-centered"
 										buttonLink="/about"
 										animate=""
