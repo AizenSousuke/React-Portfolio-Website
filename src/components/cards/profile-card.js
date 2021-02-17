@@ -17,7 +17,7 @@ export default function ProfileCard(props) {
 				<h3 className="subtitle is-uppercase">{props.data.about.job_title}</h3>
 				<div className="buttons">
 					<a
-						className="button is-outlined is-rounded is-fullwidth"
+						className="button is-outlined is-link is-rounded is-fullwidth"
 						href={`${"tel:" + props.data.contact}`}
 					>
 						<span className="icon is-small">

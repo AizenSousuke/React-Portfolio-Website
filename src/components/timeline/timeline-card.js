@@ -14,7 +14,7 @@ function TimelineCard(props) {
 						<div className="column tag is-link has-text-weight-bold">{props.data.subtitle ?? "subtitle"}</div>
 					</div>
 					<div className="message-body">
-						<div classname="subtitle">{props.data.jobscope ?? "jobscope"}</div>
+						<div className="subtitle">{props.data.jobscope ?? "jobscope"}</div>
 						<div className="is-size-7">
 							{props.data.content ??
 								"Ex anim do id aute aute. Quis anim aliqua eu eiusmod occaecat. Consectetur reprehenderit do commodo do. Occaecat eu magna in deserunt. Qui in aliquip ipsum consequat ipsum ea reprehenderit."}

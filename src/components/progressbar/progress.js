@@ -30,18 +30,9 @@ const anim = {
 };
 
 export var ProgressBar = ({ width, percent }) => {
-	// const [value, setValue] = React.useState(0);
-
-	// React.useEffect(() => {
-	// 	setValue((percent * width) / 100);
-	// }, [percent, width]);
-
 	return (
 		<div>
-			{/* <div className="progress-div" style={{ width: `${width}%` }}>
-				<div style={{ width: `${value}%` }} className="progress" />
-			</div> */}
-			<InView triggerOnce={false}>
+			<InView triggerOnce={true}>
 				{({ inView, ref }) => (
 					<div ref={ref}>
 						<motion.div
@@ -56,7 +47,6 @@ export var ProgressBar = ({ width, percent }) => {
 										className="progress is-info"
 										value={percent}
 										max={width}
-										// style={{ width: `${value}%` }}
 									></progress>
 								</div>
 								<div className="has-text-right">{percent}</div>

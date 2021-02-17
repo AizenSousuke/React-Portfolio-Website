@@ -7,8 +7,6 @@ import Cards from "../../components/cards/cards";
 import ProfileCard from "../../components/cards/profile-card";
 import { InView } from "react-intersection-observer";
 import NavButton from "../../components/buttons/navbutton.js";
-import { Link } from "react-router-dom";
-import button from "../../components/buttons/button";
 
 const list = {
 	hidden: {
@@ -155,7 +153,7 @@ class AboutMe extends Component {
 								{this.state.data.about.expertise.map((item) => (
 									<InView
 										key={item.id}
-										triggerOnce={false}
+										triggerOnce={true}
 										threshold={0.25}
 									>
 										{({ inView, ref }) => (

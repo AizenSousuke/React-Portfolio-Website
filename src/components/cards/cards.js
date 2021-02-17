@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Cards(props) {
 	return (
-		<div className="card" style={{ borderRadius: 10 }}>
+		<div className="card" style={{ borderRadius: 10, minHeight: 400 }}>
 			<img
 				className="image card-image"
 				src={props.card.imageLink ?? ""}
