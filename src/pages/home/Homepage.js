@@ -39,8 +39,12 @@ class Home extends Component {
 						<div className="hero-body">
 							<div className="container">
 								<motion.div
-									initial={{ opacity: 0, x: 200 }}
-									animate={{ opacity: 1, x: 0 }}
+									initial={{
+										rotate: -40,
+										opacity: 0,
+										x: 200,
+									}}
+									animate={{ rotate: -3, opacity: 1, x: 0 }}
 									transition={{
 										type: "spring",
 										damping: 7,
@@ -52,9 +56,15 @@ class Home extends Component {
 										{this.state.data.title}
 									</div>
 								</motion.div>
+								<br />
+								<br />
 								<motion.div
-									initial={{ opacity: 0, x: -200 }}
-									animate={{ opacity: 1, x: 0 }}
+									initial={{
+										rotate: 40,
+										opacity: 0,
+										x: -200,
+									}}
+									animate={{ rotate: 0, opacity: 1, x: 0 }}
 									transition={{
 										type: "spring",
 										damping: 7,
@@ -68,13 +78,20 @@ class Home extends Component {
 								</motion.div>
 								<br></br>
 								<motion.div
-									initial={{ opacity: 0, y: 200 }}
-									animate={{ opacity: 1, y: 0 }}
+									initial={{
+										rotateZ: -360,
+										opacity: 0,
+										y: 200,
+									}}
+									animate={{ rotateZ: 0, opacity: 1, y: 0 }}
 									transition={{
 										type: "spring",
 										damping: 7,
 										velocity: 2,
-										duration: 0.5,
+										duration: 0.3,
+									}}
+									whileHover={{
+										scale: 1.1
 									}}
 								>
 									<NavButton

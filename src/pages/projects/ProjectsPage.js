@@ -14,6 +14,7 @@ const list = {
 			type: "tween",
 			ease: "easeInOut",
 		},
+		rotateX: -90
 	},
 	visible: {
 		y: 0,
@@ -24,6 +25,7 @@ const list = {
 			ease: "easeInOut",
 			duration: 0.5,
 		},
+		rotateX: 0
 	},
 	hover: {
 		y: -10,
