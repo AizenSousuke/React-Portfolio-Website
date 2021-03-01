@@ -1,8 +1,6 @@
 ### Online Portfolio 
 
-Live at - https://our-portfolio.herokuapp.com (Original forked from version)
-
-Also at - https://react-portfolio-nik.herokuapp.com (My personal portfolio)
+https://react-portfolio-nik.herokuapp.com (My personal portfolio)
 
 ### Stack
 
