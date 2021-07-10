@@ -68,7 +68,7 @@
 			"month": "Aug 2020",
 			"header": "Solutions Developer",
 			"subtitle": "Commerce Online Pte Ltd",
-			"jobscope": "Full-Stack development with Microsoft ASP.Net Web Forms",
+			"jobscope": "Full-Stack development with Microsoft ASP.NET",
 			"content": "Microsoft C#, Microsoft SQL Server, Microsoft Sharepoint, Microsoft Server"
 		}
 	],
@@ -106,7 +106,7 @@
 			{
 				"id": 2,
 				"title": "ASP .Net",
-				"description": "C#, .Net Core, Microsoft ASP Webforms, Telerik UI Controls",
+				"description": "C#, .Net Core, Microsoft ASP.NET WebForms, Telerik UI Controls",
 				"imageLink": "https://imgur.com/0Ceufi8.png"
 			},
 			{
@@ -145,7 +145,7 @@
 				"id": 1,
 				"icon": "fas fa-cogs",
 				"title": "C#",
-				"proficiency": 75
+				"proficiency": 85
 			},
 			{
 				"id": 2,
