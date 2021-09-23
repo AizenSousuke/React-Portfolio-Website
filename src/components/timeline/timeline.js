@@ -4,7 +4,7 @@ import TimelineCard from "./timeline-card";
 function Timeline(props) {
 	return (
 		<>
-			<div className="timeline">
+			<div className="timeline" data-testid="timeline">
 				<header className="timeline-header">
 					<span className="tag is-medium is-danger">Current</span>
 				</header>
