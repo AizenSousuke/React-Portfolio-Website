@@ -99,8 +99,8 @@
 		"expertise": [
 			{
 				"id": 1,
-				"title": "React",
-				"description": "React Framework, Ionic, React-Native",
+				"title": "ReactJS",
+				"description": "React Framework, Ionic, React Native",
 				"imageLink": "https://imgur.com/o1zY60n.png"
 			},
 			{
