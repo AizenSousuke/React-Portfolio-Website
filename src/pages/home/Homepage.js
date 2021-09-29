@@ -81,7 +81,7 @@ class Home extends Component {
 											duration: 0.5,
 										}}
 									>
-										<div className="subtitle is-size-4 has-text-justified">
+										<div id="welcomeMessage" className="subtitle is-size-4 has-text-justified">
 											{this.state.data.subtitle}
 										</div>
 									</motion.div>
