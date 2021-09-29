@@ -68,6 +68,11 @@ const imageAnim = {
 	},
 };
 
+const openInNewTab = (url) => {
+	const newWindow = window.open(url, "_blank", "noopener,noreferrer");
+	if (newWindow) newWindow.opener = null;
+};
+
 class AboutMe extends Component {
 	constructor(props) {
 		super(props);
@@ -188,10 +193,28 @@ class AboutMe extends Component {
 								className="message-body"
 								card={this.state.data.about.education}
 							/>
-							<div className="card" style={{ borderRadius: 10, marginTop: '10px', backgroundColor: "darkorange" }}>
-								<div className="card-content" style={{padding: 5}}>
-									{/* <Link to={`${this.state.data.about.other_cert_link}`} target="_blank" title="Link to certificate">Link to certificate</Link> */}
-									<div className="button is-light is-fullwidth" onClick={() => {window.location.href = `${this.state.data.about.other_cert_link}`}}>Certificate Link</div>
+							<div
+								className="card"
+								style={{
+									borderRadius: 10,
+									marginTop: "10px",
+									backgroundColor: "darkorange",
+								}}
+							>
+								<div
+									className="card-content"
+									style={{ padding: 5 }}
+								>
+									<div
+										className="button is-light is-fullwidth"
+										onClick={() =>
+											openInNewTab(
+												`${this.state.data.about.other_cert_link}`
+											)
+										}
+									>
+										Certificate Link
+									</div>
 								</div>
 							</div>
 						</div>

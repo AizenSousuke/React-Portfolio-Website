@@ -16,7 +16,6 @@ it("it maps data correctly", () => {
 });
 
 it("it maps data according to snapshot", () => {
-	// const { getByTestId } = render(<Timeline data={[data]} />);
 	const timeline = renderer.create(<Timeline data={[data]} />);
 	expect(timeline).toMatchSnapshot();
 });
