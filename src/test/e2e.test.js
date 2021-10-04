@@ -17,4 +17,11 @@ describe("App.js", () => {
 		const text = await page.$eval("#welcomeMessage", (e) => e.textContent);
 		expect(text).toContain(data.subtitle);
 	});
+
+	it("goes to about page by using the button on the home page", async () => {
+		await page.waitForSelector("a.button");
+		await page.click("a.button");
+		const text = await page.$eval("#root > div > div:nth-child(1) > div.column.is-one-third > div > div:nth-child(1) > div > div > h2", el => el.textContent);
+		expect(text).toContain("Nik");
+	});
 });
