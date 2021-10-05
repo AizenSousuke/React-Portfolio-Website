@@ -1,5 +1,5 @@
 /* End2End Testing */
-import puppeteer from "puppeteer";
+import puppeteer, { Page } from "puppeteer";
 import data from "../components/data/data.json";
 
 describe("App.js", () => {
@@ -10,6 +10,11 @@ describe("App.js", () => {
 		browser = await puppeteer.launch();
 		page = await browser.newPage();
 	});
+
+	afterAll(async () => {
+		page.close();
+		browser.close();
+	})
 
 	it("contains the welcome message", async () => {
 		await page.goto("http://localhost:3000");
@@ -55,7 +60,11 @@ describe("App.js", () => {
 				})
 		);
 
-		const numberOfProjects = (await page.$$("#root > div > div > div.column.is-one-third-desktop.is-three-quarters-tablet > div.tile.is-ancestor.is-vertical > div > div")).length;
+		const numberOfProjects = (
+			await page.$$(
+				"#root > div > div > div.column.is-one-third-desktop.is-three-quarters-tablet > div.tile.is-ancestor.is-vertical > div > div"
+			)
+		).length;
 
 		expect(numberOfProjects).toEqual(data.projects.length);
 	});
