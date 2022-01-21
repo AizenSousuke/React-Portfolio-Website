@@ -1,7 +1,8 @@
 import React from "react";
 import Button from "../buttons/button.js";
 import Image, { Shimmer } from "react-shimmer";
-import ContainerDimensions from 'react-container-dimensions';
+import ContainerDimensions from "react-container-dimensions";
+import { SRLWrapper } from "simple-react-lightbox";
 
 const ProjectTile = (props) => {
 	return (
@@ -15,21 +16,29 @@ const ProjectTile = (props) => {
 						}`}
 						alt="button"
 					/> */}
-							<Image
-								// src={`${
-								// 	props.imageLink ??
-								// 	"http://loremflickr.com/480/272/default"
-								// }`}
-								src={require("../../images/" + props.imageLink + ".png")}
-								alt="button"
-								fallback={
-									<ContainerDimensions>
-										{({width, height}) => 
-											//<Shimmer width={width} height={height} />
-											<Shimmer width={width} height={height > 272 ? 272 : height} />
-										}
-									</ContainerDimensions>}
-							/>
+					<SRLWrapper>
+						<Image
+							// src={`${
+							// 	props.imageLink ??
+							// 	"http://loremflickr.com/480/272/default"
+							// }`}
+							src={require("../../images/" +
+								props.imageLink +
+								".png")}
+							alt="button"
+							fallback={
+								<ContainerDimensions>
+									{({ width, height }) => (
+										//<Shimmer width={width} height={height} />
+										<Shimmer
+											width={width}
+											height={height > 272 ? 272 : height}
+										/>
+									)}
+								</ContainerDimensions>
+							}
+						/>
+					</SRLWrapper>
 				</figure>
 				<h1 className="title">{props.title ?? "Title"}</h1>
 				<h2 className="subtitle">{props.subtitle ?? "Subtitle"}</h2>

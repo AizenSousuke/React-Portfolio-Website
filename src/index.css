@@ -24,3 +24,9 @@ body {
 	transition: 2s ease;
 	transition-delay: 0.5s;
 }
+
+.video {
+	width: 100%;
+	position: absolute;
+	z-index: -1;
+}
