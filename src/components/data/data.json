@@ -15,6 +15,13 @@
 		},
 		{
 			"id": 2,
+			"name": "ChiFan",
+			"description": "A randomizer site because no one can decide where to eat.",
+			"link": "https://github.com/AizenSousuke/chifan",
+			"imageLink": "chifan"
+		},
+		{
+			"id": 3,
 			"name": "Blog",
 			"description": "Created a blog with Dot Net Core 3.1 as its backend and React JS as the frontend. I'm the backend developer with 3 other people working on the project. We started March and the project is still pending completion.",
 			"link": "https://github.com/AizenSousuke/DotNetCoreReactREST",
