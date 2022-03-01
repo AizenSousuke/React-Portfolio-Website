@@ -22,12 +22,12 @@ export default function ProfileCard(props) {
 				<div className="buttons">
 					<a
 						className="button is-outlined is-link is-rounded is-fullwidth"
-						href={`${"tel:" + props.data.contact}`}
+						href={`${props.data.linkedin}`}
 					>
 						<span className="icon is-small">
-							<i className="fa fa-phone" aria-hidden="true"></i>
+							<i className="fab fa-linkedin" aria-hidden="true"></i>
 						</span>
-						<span>Call Me</span>
+						<span>Connect on LinkedIn</span>
 					</a>
 					<a
 						className="button is-black is-rounded is-fullwidth"

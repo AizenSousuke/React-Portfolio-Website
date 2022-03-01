@@ -1,9 +1,11 @@
 {
 	"name": "Nik",
 	"contact": "+65 8666 0407",
+	"linkedin": "https://www.linkedin.com/in/putera-nik-9b242499/",
 	"email": "puteranikdimas@gmail.com",
 	"title": "I create web apps to solve business needs",
-	"subtitle": "My name is Nik and I'm a web application developer. I am passionate in learning new technologies, building websites, applications, games and also in learning how to fly a fighter jet through flight simulation software.",
+	"subtitle": "My name is ",
+	"subtitle2": " and I'm a web application developer. I am passionate in learning new technologies, building websites, applications, games and also in learning how to fly a fighter jet through flight simulation software.",
 	"subtitle_button": "Learn more about me",
 	"projects": [
 		{
@@ -93,7 +95,7 @@
 	"about": {
 		"profile_picture": "avatar",
 		"job_title": "Web App Developer",
-		"summary": "I think about code and systems all the time. When I'm not at my day job, I experiment with new web technologies such as Docker and serverless architecture. Currently I'm learning about frontend frameworks like ReactJS, Storybook and NextJS.",
+		"summary": "I think about code and systems all the time. When I'm not at my day job, I experiment with new web technologies such as Docker and serverless architecture. Currently I'm learning about frontend frameworks using the MERN Stack.",
 		"signature": "Nik",
 		"education": {
 			"title": "Republic Polytechnic",
@@ -170,7 +172,7 @@
 				"id": 4,
 				"icon": "fab fa-docker",
 				"title": "Docker",
-				"proficiency": 70
+				"proficiency": 40
 			},
 			{
 				"id": 5,

@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import Data from "../../components/data/data.json";
 import { motion } from "framer-motion";
 import NavButton from "../../components/buttons/navbutton.js";
+import "./Homepage.css";
 
 class Home extends Component {
 	constructor(props) {
@@ -82,7 +83,7 @@ class Home extends Component {
 										}}
 									>
 										<div id="welcomeMessage" className="subtitle is-size-4 has-text-justified">
-											{this.state.data.subtitle}
+											{this.state.data.subtitle} <span className="name">{this.state.data.name}</span> {this.state.data.subtitle2}
 										</div>
 									</motion.div>
 									<br></br>
