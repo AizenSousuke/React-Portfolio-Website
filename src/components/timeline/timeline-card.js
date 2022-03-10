@@ -24,7 +24,10 @@ function TimelineCard({ data }) {
 						<div className="subtitle">
 							{data.jobscope ?? "jobscope"}
 						</div>
-						<div className="is-size-7">
+						<div className="is-italic is-size-6">
+							{data.jobscope_advanced ?? null}
+						</div>
+						<div className="is-size-7" style={{marginTop: 10}}>
 							{data.content ??
 								"Ex anim do id aute aute. Quis anim aliqua eu eiusmod occaecat. Consectetur reprehenderit do commodo do. Occaecat eu magna in deserunt. Qui in aliquip ipsum consequat ipsum ea reprehenderit."}
 						</div>

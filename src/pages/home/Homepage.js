@@ -4,6 +4,7 @@ import Data from "../../components/data/data.json";
 import { motion } from "framer-motion";
 import NavButton from "../../components/buttons/navbutton.js";
 import "./Homepage.css";
+import * as Avatar from "../../images/avatar.png";
 
 class Home extends Component {
 	constructor(props) {
@@ -40,6 +41,14 @@ class Home extends Component {
 						<div className="hero is-large">
 							<div className="hero-body">
 								<div className="container">
+									<div className="avatar"></div>
+									{/* <div className="card">
+										<div className="card-image">
+											<figure className="image">
+												<img src={Avatar} alt="" />
+											</figure>
+										</div>
+									</div> */}
 									<motion.div
 										initial={{
 											rotate: -40,
@@ -82,8 +91,15 @@ class Home extends Component {
 											duration: 0.5,
 										}}
 									>
-										<div id="welcomeMessage" className="subtitle is-size-4 has-text-justified">
-											{this.state.data.subtitle} <span className="name">{this.state.data.name}</span> {this.state.data.subtitle2}
+										<div
+											id="welcomeMessage"
+											className="subtitle is-size-4 has-text-justified"
+										>
+											{this.state.data.subtitle}{" "}
+											<span className="name">
+												{this.state.data.name}
+											</span>{" "}
+											{this.state.data.subtitle2}
 										</div>
 									</motion.div>
 									<br></br>

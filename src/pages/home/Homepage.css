@@ -2,3 +2,8 @@
     font-size: 3em;
     color: #474747;
 }
+
+.avatar {
+    display: block;
+    background: url(../../images/avatar.png);
+}

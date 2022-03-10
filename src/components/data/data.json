@@ -77,7 +77,8 @@
 			"month": "Aug 2020",
 			"header": "Solutions Developer",
 			"subtitle": "Commerce Online Pte Ltd",
-			"jobscope": "Full-Stack development with Microsoft ASP.NET Webforms for an internal website that is used by the National Environment Agency (NEA)",
+			"jobscope": "Full-Stack development with the Microsoft ASP.NET Webforms framework for an internal Finance website that is used by the National Environment Agency (NEA)",
+			"jobscope_advanced": "Developer in a team of 2 - 1 Developer and 1 Project Manager",
 			"content": "Microsoft C#, Microsoft SQL Server, Microsoft Sharepoint, Microsoft Server"
 		}
 	],
@@ -120,32 +121,26 @@
 			},
 			{
 				"id": 3,
-				"title": "Games Development",
-				"description": "Unity, Game Maker",
-				"imageLink": "https://imgur.com/nSAXbxn.png"
-			},
-			{
-				"id": 4,
 				"title": "Video Editing",
 				"description": "Adobe After Effects and Premiere Pro",
 				"imageLink": "https://imgur.com/KxEKMTP.png"
 			},
 			{
-				"id": 5,
+				"id": 4,
 				"title": "Dev Ops",
 				"description": "Docker, Github, Azure, Amazon",
 				"imageLink": "https://imgur.com/NrCMtF8.png"
 			},
 			{
-				"id": 6,
+				"id": 5,
 				"title": "MySQL",
 				"description": "Linq, EF Framework",
 				"imageLink": "https://imgur.com/My0BGwI.png"
 			},
 			{
-				"id": 7,
+				"id": 6,
 				"title": "Flight Simulation",
-				"description": "FA-18C",
+				"description": "F/A-18C",
 				"imageLink": "https://imgur.com/esfbHUP.png"
 			}
 		],
@@ -160,7 +155,7 @@
 				"id": 2,
 				"icon": "fas fa-scroll",
 				"title": "Typescript",
-				"proficiency": 70
+				"proficiency": 65
 			},
 			{
 				"id": 3,
