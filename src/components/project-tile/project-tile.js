@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "../buttons/button.js";
-import Image, { Shimmer } from "react-shimmer";
+import { Image, Shimmer } from "react-shimmer";
 import ContainerDimensions from "react-container-dimensions";
 import { SRLWrapper } from "simple-react-lightbox";
 
